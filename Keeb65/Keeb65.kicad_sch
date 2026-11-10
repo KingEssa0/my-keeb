@@ -1,0 +1,2616 @@
+(kicad_sch (version 20250114) (generator eeschema)
+  (uuid 2d42baae-762d-4bed-8016-8f40f81b6f39) (paper "A2")
+  (title_block (title "Keeb65 keyboard matrix") (rev "1"))
+  (lib_symbols (symbol "MCU_Module:RaspberryPi_Pico"
+		(pin_names
+			(offset 0.762)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "A"
+			(at -19.05 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RaspberryPi_Pico"
+			(at 7.62 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+			(at 0 -46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
+			(at 0 -49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+			(at 0 -52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "RP2350A M33 RISC-V Hazard3 usb"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "RaspberryPi_Pico_0_1"
+			(rectangle
+				(start -19.05 34.29)
+				(end 19.05 -31.75)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 34.29) (xy -3.81 33.655) (xy -3.81 31.75) (xy -3.175 31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 32.766) (xy -3.429 33.02) (xy -3.175 33.02) (xy -3.175 30.48) (xy -2.921 30.48) (xy -2.921 30.734)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 31.75) (xy -1.905 33.02) (xy -1.905 30.48) (xy -3.175 31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 34.29) (xy -1.27 33.655) (xy -1.27 31.75) (xy -1.905 31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -31.75) (xy 1.27 -31.115) (xy 1.27 -24.13) (xy 18.415 -24.13) (xy 19.05 -22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "RaspberryPi_Pico_1_1"
+			(pin bidirectional line
+				(at -22.86 15.24 0)
+				(length 3.81)
+				(name "GPIO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM0_A" output line)
+				(alternate "SPI0_RX" input line)
+				(alternate "UART0_TX" output line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 12.7 0)
+				(length 3.81)
+				(name "GPIO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM0_B" bidirectional line)
+				(alternate "UART0_RX" input line)
+				(alternate "USB_VBUS_DET" passive line)
+				(alternate "~{SPI0_CSn}" bidirectional line)
+			)
+			(pin power_out line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GND_IN" power_in line)
+			)
+			(pin bidirectional line
+				(at -22.86 10.16 0)
+				(length 3.81)
+				(name "GPIO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM1_A" output line)
+				(alternate "SPI0_SCK" bidirectional clock)
+				(alternate "UART0_CTS" input line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at -22.86 7.62 0)
+				(length 3.81)
+				(name "GPIO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM1_B" bidirectional line)
+				(alternate "SPI0_TX" output line)
+				(alternate "UART0_RTS" output line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 5.08 0)
+				(length 3.81)
+				(name "GPIO4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM2_A" output line)
+				(alternate "SPI0_RX" input line)
+				(alternate "UART1_TX" output line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 2.54 0)
+				(length 3.81)
+				(name "GPIO5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM2_B" bidirectional line)
+				(alternate "UART1_RX" input line)
+				(alternate "USB_VBUS_EN" output line)
+				(alternate "~{SPI0_CSn}" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -22.86 0 0)
+				(length 3.81)
+				(name "GPIO6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM3_A" output line)
+				(alternate "SPI0_SCK" bidirectional clock)
+				(alternate "UART1_CTS" input line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 -2.54 0)
+				(length 3.81)
+				(name "GPIO7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM3_B" bidirectional line)
+				(alternate "SPI0_TX" output line)
+				(alternate "UART1_RTS" output line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 -5.08 0)
+				(length 3.81)
+				(name "GPIO8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM4_A" output line)
+				(alternate "SPI1_RX" input line)
+				(alternate "UART1_TX" output line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at -22.86 -7.62 0)
+				(length 3.81)
+				(name "GPIO9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM4_B" bidirectional line)
+				(alternate "UART1_RX" input line)
+				(alternate "USB_OVCUR_DET" input line)
+				(alternate "~{SPI1_CSn}" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -22.86 -10.16 0)
+				(length 3.81)
+				(name "GPIO10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM5_A" output line)
+				(alternate "SPI1_SCK" bidirectional clock)
+				(alternate "UART1_CTS" input line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 -12.7 0)
+				(length 3.81)
+				(name "GPIO11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM5_B" bidirectional line)
+				(alternate "SPI1_TX" output line)
+				(alternate "UART1_RTS" output line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at -22.86 -15.24 0)
+				(length 3.81)
+				(name "GPIO12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM6_A" output line)
+				(alternate "SPI1_RX" input line)
+				(alternate "UART0_TX" output line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at -22.86 -17.78 0)
+				(length 3.81)
+				(name "GPIO13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM6_B" bidirectional line)
+				(alternate "UART0_RX" input line)
+				(alternate "USB_VBUS_DET" input line)
+				(alternate "~{SPI1_CSn}" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -22.86 -20.32 0)
+				(length 3.81)
+				(name "GPIO14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM7_A" output line)
+				(alternate "SPI1_SCK" bidirectional clock)
+				(alternate "UART0_CTS" input line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at -22.86 -22.86 0)
+				(length 3.81)
+				(name "GPIO15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM7_B" bidirectional line)
+				(alternate "SPI1_TX" output line)
+				(alternate "UART0_RTS" output line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at 22.86 12.7 180)
+				(length 3.81)
+				(name "GPIO16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM0_A" output line)
+				(alternate "SPI0_RX" input line)
+				(alternate "UART0_TX" output line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin bidirectional line
+				(at 22.86 10.16 180)
+				(length 3.81)
+				(name "GPIO17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM0_B" bidirectional line)
+				(alternate "UART0_RX" input line)
+				(alternate "USB_VBUS_EN" output line)
+				(alternate "~{SPI0_CSn}" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 7.62 180)
+				(length 3.81)
+				(name "GPIO18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM1_A" output line)
+				(alternate "SPI0_SCK" bidirectional clock)
+				(alternate "UART0_CTS" input line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin bidirectional line
+				(at 22.86 5.08 180)
+				(length 3.81)
+				(name "GPIO19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM1_B" bidirectional line)
+				(alternate "SPI0_TX" output line)
+				(alternate "UART0_RTS" output line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin bidirectional line
+				(at 22.86 2.54 180)
+				(length 3.81)
+				(name "GPIO20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CLOCK_GPIN0" input clock)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM2_A" output line)
+				(alternate "SPI0_RX" input line)
+				(alternate "UART1_TX" output line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at 22.86 0 180)
+				(length 3.81)
+				(name "GPIO21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CLOCK_GPOUT0" output clock)
+				(alternate "I2C0_SCL" bidirectional clock)
+				(alternate "PWM2_B" bidirectional line)
+				(alternate "UART1_RX" input line)
+				(alternate "USB_OVCUR_DET" input line)
+				(alternate "~{SPI0_CSn}" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 -2.54 180)
+				(length 3.81)
+				(name "GPIO22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CLOCK_GPIN1" input clock)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM3_A" output line)
+				(alternate "SPI0_SCK" bidirectional clock)
+				(alternate "UART1_CTS" input line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin passive line
+				(at -22.86 22.86 0)
+				(length 3.81)
+				(name "RUN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{RESET}" passive line)
+			)
+			(pin bidirectional line
+				(at 22.86 -12.7 180)
+				(length 3.81)
+				(name "GPIO26_ADC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC0" input line)
+				(alternate "GPIO26" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "PWM5_A" output line)
+				(alternate "SPI1_SCK" bidirectional clock)
+				(alternate "UART1_CTS" input line)
+				(alternate "USB_VBUS_EN" output line)
+			)
+			(pin bidirectional line
+				(at 22.86 -15.24 180)
+				(length 3.81)
+				(name "GPIO27_ADC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1" input line)
+				(alternate "GPIO27" bidirectional line)
+				(alternate "I2C1_SCL" bidirectional clock)
+				(alternate "PWM5_B" bidirectional line)
+				(alternate "SPI1_TX" output line)
+				(alternate "UART1_RTS" output line)
+				(alternate "USB_OVCUR_DET" input line)
+			)
+			(pin power_out line
+				(at 22.86 -22.86 180)
+				(length 3.81)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "GND" passive line)
+			)
+			(pin bidirectional line
+				(at 22.86 -17.78 180)
+				(length 3.81)
+				(name "GPIO28_ADC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC2" input line)
+				(alternate "GPIO28" bidirectional line)
+				(alternate "I2C0_SDA" bidirectional line)
+				(alternate "PWM6_A" output line)
+				(alternate "SPI1_RX" input line)
+				(alternate "UART0_TX" output line)
+				(alternate "USB_VBUS_DET" input line)
+			)
+			(pin power_in line
+				(at 22.86 -7.62 180)
+				(length 3.81)
+				(name "ADC_VREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 5.08 38.1 270)
+				(length 3.81)
+				(name "3V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -22.86 20.32 0)
+				(length 3.81)
+				(name "3V3_EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{3V3_DISABLE}" passive line)
+			)
+			(pin passive line
+				(at 0 -35.56 90)
+				(length 3.81)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -5.08 38.1 270)
+				(length 3.81)
+				(name "VSYS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "VSYS_OUT" power_out line)
+			)
+			(pin power_out line
+				(at 0 38.1 270)
+				(length 3.81)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "VBUS_IN" power_in line)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Switch:SW_Push"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 1.27 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 0 -1.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SW_Push_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:D"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "D_0_1"
+			(polyline
+				(pts
+					(xy -1.27 1.27) (xy -1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Mechanical:MountingHole"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "H"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "mounting hole"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "MountingHole*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "MountingHole_0_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 1.27)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+  (text "KEEB 65 / 67-key diode matrix" (at 22.86 19.05 0) (effects (font (size 3.2 3.2)) (justify left)) (uuid d18286f6-d061-43c1-a1df-d6061cb7ee41)) (text "Each 1N4148 cathode (band) faces ROW. Firmware matrix direction: COL2ROW." (at 22.86 26.67 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid 15bba02c-4323-4338-b3bd-c0f3eaf68a48)) (text "Wide switch footprints include PCB-mount stabilizer holes." (at 22.86 31.75 0) (effects (font (size 1.6 1.6)) (justify left)) (uuid 448fb7c7-75dc-444c-a98d-4d2ec2a790ad)) 
+    (symbol (lib_id "Switch:SW_Push") (at 30.48 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b5f4466e-9ec7-4e52-a0ce-60419bfbc9e3)
+      (property "Reference" "SW1" (at 30.48 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Esc" (at 30.48 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 30.48 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 14aaef8e-aac6-4794-ac0e-104f5e967573))(pin "2" (uuid 64589f65-cdce-4ec6-aded-54100b257475))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW1") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 43.18 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 813ab893-6d81-4acb-aadf-37a9724f9d77)
+      (property "Reference" "D1" (at 43.18 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 43.18 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 43.18 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f8f8ba57-0898-41d7-a5d5-3524d660a0f1))(pin "2" (uuid 6b953950-ab61-430f-8b29-cf4e87d0d931))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D1") (unit 1)))))
+     (wire (pts (xy 25.4 48.26) (xy 25.4 53.34)) (stroke (width 0) (type default)) (uuid 1cfc623f-2db6-4d67-8445-a0d01806099f)) (label "COL0" (at 25.4 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 926e6dbe-9981-4397-b26b-63689c7a9ec6)) (wire (pts (xy 35.56 48.26) (xy 39.37 48.26)) (stroke (width 0) (type default)) (uuid c3086064-53df-484e-87cd-e609bdbe6ca7)) (label "KEY01" (at 35.56 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 02c99d35-e5cd-4bb1-8a96-219eb974f6c8)) (wire (pts (xy 46.99 48.26) (xy 46.99 53.34)) (stroke (width 0) (type default)) (uuid c929f802-0a4a-4ca7-8128-ffe36c4538c1)) (label "ROW0" (at 46.99 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d795614e-d2fa-4581-a243-a5e294329f72)) 
+    (symbol (lib_id "Switch:SW_Push") (at 60.96 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 9aa0860e-ea39-4811-9b96-ed916034eb6b)
+      (property "Reference" "SW2" (at 60.96 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1" (at 60.96 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 60.96 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid ea83fc0d-c5f6-4525-a8fa-4eac27726a75))(pin "2" (uuid bb6364e7-09bd-4b20-84cb-b0468f0b8cad))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW2") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 73.66 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 895b2f66-dff9-4a4b-bb0a-c1c675d7d920)
+      (property "Reference" "D2" (at 73.66 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 73.66 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 73.66 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 162e4320-3b2b-487a-92da-0bbd3e67aa8f))(pin "2" (uuid 961cad9a-c46f-4ad3-8940-ddb1a4c91ebf))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D2") (unit 1)))))
+     (wire (pts (xy 55.88 48.26) (xy 55.88 53.34)) (stroke (width 0) (type default)) (uuid b3a2bd31-df6a-4586-aef0-6b3ac11e7106)) (label "COL1" (at 55.88 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 56517630-f5c1-452c-86af-be52c3ff2c4c)) (wire (pts (xy 66.04 48.26) (xy 69.85 48.26)) (stroke (width 0) (type default)) (uuid aa4f5a20-a22d-4661-b44f-9f25ee5aeff7)) (label "KEY02" (at 66.04 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 20b6f3b7-e88c-466d-8a7f-9648f5f77b3d)) (wire (pts (xy 77.47 48.26) (xy 77.47 53.34)) (stroke (width 0) (type default)) (uuid 29e85545-f296-4ada-a943-bcc7601609cb)) (label "ROW0" (at 77.47 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ad1e51bb-ae67-40f5-914d-ca3bd4314e16)) 
+    (symbol (lib_id "Switch:SW_Push") (at 91.44 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ca3b1763-9f18-4f51-b70f-4a9c5cac6966)
+      (property "Reference" "SW3" (at 91.44 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "2" (at 91.44 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 91.44 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid dde7d06b-cd06-452e-9114-212920ee6c48))(pin "2" (uuid 34367df7-22b5-4d79-981e-5d9acec81f60))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW3") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 104.14 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 83631a55-a00d-4384-9b5c-53774841c89e)
+      (property "Reference" "D3" (at 104.14 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 104.14 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 104.14 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b7b69f63-cbd0-4ebe-adab-82ff7f9f9501))(pin "2" (uuid bb827f62-4871-434c-b768-491265f47fff))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D3") (unit 1)))))
+     (wire (pts (xy 86.36 48.26) (xy 86.36 53.34)) (stroke (width 0) (type default)) (uuid 1f0d6346-e90b-41e0-a494-a9ceee411e4d)) (label "COL2" (at 86.36 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 5fe71a43-e810-490c-a05f-e622b086534a)) (wire (pts (xy 96.52 48.26) (xy 100.33 48.26)) (stroke (width 0) (type default)) (uuid 737bbd36-4bf4-4ba4-bbbc-add481ddeedc)) (label "KEY03" (at 96.52 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 16d707a8-4294-4580-99df-6bd47c85cdc4)) (wire (pts (xy 107.95 48.26) (xy 107.95 53.34)) (stroke (width 0) (type default)) (uuid fabd2069-0da3-45dd-8b3e-d2f890ebe5eb)) (label "ROW0" (at 107.95 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 58989e8d-2ab1-431a-810a-9148d95a4c01)) 
+    (symbol (lib_id "Switch:SW_Push") (at 121.92 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b16d7b6c-533c-41c9-8b75-c2d82c209413)
+      (property "Reference" "SW4" (at 121.92 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "3" (at 121.92 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 121.92 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid bc247e33-e6cf-4d1e-aafb-0bd806f493b0))(pin "2" (uuid dee0d2af-f201-412f-bcf8-0cfafc637b4b))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW4") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 134.62 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f8687c8c-a43f-4408-9185-55368a935af8)
+      (property "Reference" "D4" (at 134.62 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 134.62 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 134.62 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f0a25336-6c7f-430b-af18-2dc178fb5fdb))(pin "2" (uuid 4c6cdd40-a942-4904-89b9-14c5e765aaac))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D4") (unit 1)))))
+     (wire (pts (xy 116.84 48.26) (xy 116.84 53.34)) (stroke (width 0) (type default)) (uuid 64954b0d-bb3a-4717-b3ca-a16ad5ce591c)) (label "COL3" (at 116.84 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c312de63-3551-43c7-acd1-b274db35abd4)) (wire (pts (xy 127 48.26) (xy 130.81 48.26)) (stroke (width 0) (type default)) (uuid ac23d3c1-d351-4dac-a296-c28304770089)) (label "KEY04" (at 127 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 25958fa9-aa34-4a35-9185-ecb215eb9ea7)) (wire (pts (xy 138.43 48.26) (xy 138.43 53.34)) (stroke (width 0) (type default)) (uuid e1d1b24f-2f29-4c63-ab1a-2d9f366fa1ff)) (label "ROW0" (at 138.43 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d1742a0e-d5e8-4253-8cf8-f3a1a6712bb5)) 
+    (symbol (lib_id "Switch:SW_Push") (at 152.4 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3fa33b5e-26c3-48b5-bcb3-116772f40921)
+      (property "Reference" "SW5" (at 152.4 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "4" (at 152.4 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 152.4 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a6e31323-57bc-42c4-9ff2-aae49ea71385))(pin "2" (uuid 89963927-ad0c-41be-8bbd-ff8797ce5c02))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW5") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 165.1 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 9229c58f-1f0a-4e6c-9e34-66abf2472da2)
+      (property "Reference" "D5" (at 165.1 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 165.1 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 165.1 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid db73c277-41e9-4a07-9e9d-1e8d80e5c7c9))(pin "2" (uuid 9f7ec355-d831-4952-b016-6cecb85fe2ea))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D5") (unit 1)))))
+     (wire (pts (xy 147.32 48.26) (xy 147.32 53.34)) (stroke (width 0) (type default)) (uuid 507070ad-2a98-416a-9596-69acb33bb4b4)) (label "COL4" (at 147.32 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 852810d1-411d-4c04-b972-02e9c3f0355c)) (wire (pts (xy 157.48 48.26) (xy 161.29 48.26)) (stroke (width 0) (type default)) (uuid 35486996-00a8-4bc6-8a3a-eec62d59bd18)) (label "KEY05" (at 157.48 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid e18ac23a-0596-427d-9263-ddb017783248)) (wire (pts (xy 168.91 48.26) (xy 168.91 53.34)) (stroke (width 0) (type default)) (uuid ee67d1c6-f6ff-4e13-a4bb-077c36635cbe)) (label "ROW0" (at 168.91 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid dec65bb0-f2eb-4259-9cea-5295d7b2ba6f)) 
+    (symbol (lib_id "Switch:SW_Push") (at 182.88 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 8c960fb9-bb2b-4194-aa1c-c365126740b8)
+      (property "Reference" "SW6" (at 182.88 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "5" (at 182.88 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 182.88 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 6bbf1b95-63dc-49b7-880d-036e7e3d96fe))(pin "2" (uuid 17b3a1de-9aca-4e78-8ea9-164a809f184d))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW6") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 195.58 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4f38b925-bd6e-4449-86d5-fab947b2b9c9)
+      (property "Reference" "D6" (at 195.58 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 195.58 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 195.58 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 00b692e5-6c4e-4000-92f9-6c793d109ed6))(pin "2" (uuid c60958e0-e9d2-4223-af98-109b2bc60b01))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D6") (unit 1)))))
+     (wire (pts (xy 177.8 48.26) (xy 177.8 53.34)) (stroke (width 0) (type default)) (uuid 73a27e23-10b5-44bf-a21d-5688b1c22135)) (label "COL5" (at 177.8 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 56f66966-df29-4a0f-89b1-541f9b1b84bd)) (wire (pts (xy 187.96 48.26) (xy 191.77 48.26)) (stroke (width 0) (type default)) (uuid 5cd880ac-b724-4290-a619-8e474adf0ef1)) (label "KEY06" (at 187.96 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8c3161c6-344e-492c-8e87-c62ac834cbb2)) (wire (pts (xy 199.39 48.26) (xy 199.39 53.34)) (stroke (width 0) (type default)) (uuid e57bb225-0e18-436a-8fd9-7a5278fe68e0)) (label "ROW0" (at 199.39 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3a0b51c7-abfe-4300-93b9-0aee0b3b7ac4)) 
+    (symbol (lib_id "Switch:SW_Push") (at 213.36 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6f9c9ea4-2851-462e-ba95-cacda2a9bfb7)
+      (property "Reference" "SW7" (at 213.36 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "6" (at 213.36 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 213.36 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 6b75fc3f-d9f7-4ba9-bbdf-94af1a0b8ca0))(pin "2" (uuid 64c18370-2869-4fcb-989e-83573ff76d37))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW7") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 226.06 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ad8b61d5-0242-408d-b6a2-e1daccc4a638)
+      (property "Reference" "D7" (at 226.06 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 226.06 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 226.06 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a4c6984f-7c5f-455a-a69c-7283f1e1060e))(pin "2" (uuid f67cc627-e424-4e6f-8997-321b0c25b811))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D7") (unit 1)))))
+     (wire (pts (xy 208.28 48.26) (xy 208.28 53.34)) (stroke (width 0) (type default)) (uuid 7e3021ed-eafc-4f44-8ad6-9373dfec395f)) (label "COL6" (at 208.28 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 686416e0-bd09-4b07-93df-00e711027a42)) (wire (pts (xy 218.44 48.26) (xy 222.25 48.26)) (stroke (width 0) (type default)) (uuid 4fd7588f-3346-4fbc-9a1c-5bf751b3e636)) (label "KEY07" (at 218.44 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 5bf2b5a5-075c-44c1-9934-958ad30f631d)) (wire (pts (xy 229.87 48.26) (xy 229.87 53.34)) (stroke (width 0) (type default)) (uuid cf78bb27-523c-4d1b-999e-096bde6855ee)) (label "ROW0" (at 229.87 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f5a6ddaa-fe29-41bd-b248-2560a3b987db)) 
+    (symbol (lib_id "Switch:SW_Push") (at 243.84 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid cc13a203-0b4f-4ad8-9ba3-a6e92d08efef)
+      (property "Reference" "SW8" (at 243.84 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "7" (at 243.84 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 243.84 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 359f3044-28ef-4624-9290-bf958027a11c))(pin "2" (uuid 80796e94-39b0-4b65-a732-40b5efccb500))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW8") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 256.54 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d724998d-a172-4cb9-a26a-c6053e3a7167)
+      (property "Reference" "D8" (at 256.54 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 256.54 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 256.54 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 54d2dc19-a375-4e43-8b87-0b378c2205c9))(pin "2" (uuid bff72883-6bd4-46d3-8451-0d5cba9777b0))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D8") (unit 1)))))
+     (wire (pts (xy 238.76 48.26) (xy 238.76 53.34)) (stroke (width 0) (type default)) (uuid 81b149aa-02d4-45f2-af19-259b372100c2)) (label "COL7" (at 238.76 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d8fc5af2-df1d-4939-9a64-4ae0c88d78fc)) (wire (pts (xy 248.92 48.26) (xy 252.73 48.26)) (stroke (width 0) (type default)) (uuid c8a3252a-0e2a-460a-9ba6-2fac7105084c)) (label "KEY08" (at 248.92 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 47349a9f-fadd-4573-a2ee-9dc400998eb9)) (wire (pts (xy 260.35 48.26) (xy 260.35 53.34)) (stroke (width 0) (type default)) (uuid f988ed95-1d59-4727-b061-364be7623014)) (label "ROW0" (at 260.35 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c3b4ff58-fe10-4573-a0d1-10b22a43aedf)) 
+    (symbol (lib_id "Switch:SW_Push") (at 274.32 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 411fbb13-a1b0-4bf4-9f6f-eb831aed361b)
+      (property "Reference" "SW9" (at 274.32 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "8" (at 274.32 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 274.32 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 18090b6b-6e2b-410f-a64d-eb159e56af58))(pin "2" (uuid 35806c80-faa8-42b2-9884-4d0c8770fe12))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW9") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 287.02 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 46856794-3937-48ba-ad6c-686982bb7ea4)
+      (property "Reference" "D9" (at 287.02 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 287.02 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 287.02 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e002e578-8a94-4c57-adfd-5c29dd4e454f))(pin "2" (uuid e0ccad1a-9788-4348-a4df-6b92303a58ce))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D9") (unit 1)))))
+     (wire (pts (xy 269.24 48.26) (xy 269.24 53.34)) (stroke (width 0) (type default)) (uuid efb1f8eb-7029-4d83-9060-a1806d5e28ba)) (label "COL8" (at 269.24 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 05408b76-9ae6-4086-8ae0-f197b6ae294f)) (wire (pts (xy 279.4 48.26) (xy 283.21 48.26)) (stroke (width 0) (type default)) (uuid d3dc898a-b289-4755-9ee9-88be866eb786)) (label "KEY09" (at 279.4 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1beabb27-e6d3-423d-86f6-cf5935a20e29)) (wire (pts (xy 290.83 48.26) (xy 290.83 53.34)) (stroke (width 0) (type default)) (uuid 315f13f0-3824-4fe5-b39d-3d80f9725394)) (label "ROW0" (at 290.83 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3c06c85b-5c20-48d9-9ded-0760fc84cb70)) 
+    (symbol (lib_id "Switch:SW_Push") (at 304.8 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3008942a-e469-433f-9a84-f306e41a9061)
+      (property "Reference" "SW10" (at 304.8 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "9" (at 304.8 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 304.8 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 070df696-3cae-4e6a-be34-42faa8d546cb))(pin "2" (uuid 1b17f370-91e3-446f-a500-2676e9938d5e))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW10") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 317.5 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 41fe6d87-f800-4549-a5bd-6d4d8fddb0d7)
+      (property "Reference" "D10" (at 317.5 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 317.5 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 317.5 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 75328e7b-1559-49b1-af12-d044d9ece62a))(pin "2" (uuid 4e341c43-bdc0-4dc7-993f-fdaf5fbcb2a5))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D10") (unit 1)))))
+     (wire (pts (xy 299.72 48.26) (xy 299.72 53.34)) (stroke (width 0) (type default)) (uuid fbc96ff2-9efe-4bd8-b1b0-c4a98b18d571)) (label "COL9" (at 299.72 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid a4595a21-4d43-4506-8605-fa4b60973686)) (wire (pts (xy 309.88 48.26) (xy 313.69 48.26)) (stroke (width 0) (type default)) (uuid 3dc88cba-8006-439b-8704-8a56d2dab10f)) (label "KEY10" (at 309.88 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9f4bdef6-2c01-4c6b-9bb4-c8b77f49b61e)) (wire (pts (xy 321.31 48.26) (xy 321.31 53.34)) (stroke (width 0) (type default)) (uuid d610ddea-b31b-4623-bd32-86f54184797f)) (label "ROW0" (at 321.31 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9ec64268-5065-410d-a077-c81ad87e8d40)) 
+    (symbol (lib_id "Switch:SW_Push") (at 335.28 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b6c24d0a-1f9b-4901-8a8a-5f1575a33ab6)
+      (property "Reference" "SW11" (at 335.28 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "0" (at 335.28 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 335.28 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b31e8f35-20b8-4b5e-be4e-e9c18a9b9eb7))(pin "2" (uuid 6027e3e4-582e-45d0-9aff-76c51f31ad6d))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW11") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 347.98 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1eecd007-05d7-4467-b82f-786ff8243d57)
+      (property "Reference" "D11" (at 347.98 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 347.98 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 347.98 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 37f38390-361d-4f47-ac0f-28f7fbee1905))(pin "2" (uuid 19706e6a-03b5-4a72-96b4-a0f64b4bd768))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D11") (unit 1)))))
+     (wire (pts (xy 330.2 48.26) (xy 330.2 53.34)) (stroke (width 0) (type default)) (uuid 3bedf02e-573d-483c-a5a3-bbffe320fbd2)) (label "COL10" (at 330.2 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3b081dc9-037e-4fcb-8998-23b4954e4dce)) (wire (pts (xy 340.36 48.26) (xy 344.17 48.26)) (stroke (width 0) (type default)) (uuid 0fe34371-e2c0-4542-b4e9-a695d014e9b1)) (label "KEY11" (at 340.36 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 739e448a-df6f-456a-a313-ce002a914f9b)) (wire (pts (xy 351.79 48.26) (xy 351.79 53.34)) (stroke (width 0) (type default)) (uuid f7ff98c8-9fc5-4111-8dbb-85cfd808b748)) (label "ROW0" (at 351.79 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid dcc24866-2620-4b37-8bfa-cc1bf0317466)) 
+    (symbol (lib_id "Switch:SW_Push") (at 365.76 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4782bd6b-5db6-41d4-8fe1-64c26a5a78e1)
+      (property "Reference" "SW12" (at 365.76 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "-" (at 365.76 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 365.76 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 505d0663-0bbb-4d5e-81c2-776b802e0cad))(pin "2" (uuid 99ef54ea-f737-4001-b5df-4c29380d2325))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW12") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 378.46 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d179e29e-c0b3-4de5-a6d3-4aca6059d5c5)
+      (property "Reference" "D12" (at 378.46 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 378.46 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 378.46 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid c9d0c699-07e9-42ad-9769-3511156a5b82))(pin "2" (uuid 5be91940-4aef-478b-abaf-40f324b093f4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D12") (unit 1)))))
+     (wire (pts (xy 360.68 48.26) (xy 360.68 53.34)) (stroke (width 0) (type default)) (uuid 993688ae-85be-4699-ad2e-8728c3e50cc0)) (label "COL11" (at 360.68 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1a65d6fe-c4cc-4c2a-9d30-77f91e34451f)) (wire (pts (xy 370.84 48.26) (xy 374.65 48.26)) (stroke (width 0) (type default)) (uuid a7f5c3c2-41f4-4b2f-952b-0766e224f535)) (label "KEY12" (at 370.84 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 6ae2674f-6ecc-4419-b4fe-8ec1e295bc6f)) (wire (pts (xy 382.27 48.26) (xy 382.27 53.34)) (stroke (width 0) (type default)) (uuid 5e55d24d-ed4e-4fca-bd71-624275d3fb18)) (label "ROW0" (at 382.27 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4b9a58d5-47b3-41c5-9d94-bf6226d8a8c1)) 
+    (symbol (lib_id "Switch:SW_Push") (at 396.24 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 17674984-bf4a-49b7-947f-689df38fecc8)
+      (property "Reference" "SW13" (at 396.24 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "=" (at 396.24 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 396.24 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d01941cc-e83a-43fd-830c-b609e7449752))(pin "2" (uuid a9450644-0292-485c-a9b9-3f600e0b7604))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW13") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 408.94 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1853b8ef-7021-41ff-a252-b7e1ef50b049)
+      (property "Reference" "D13" (at 408.94 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 408.94 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 408.94 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 04bd7ed6-c860-4254-bc95-9d0ff074c30e))(pin "2" (uuid 696118fe-11b8-48bc-afe9-9dd73f2b7cec))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D13") (unit 1)))))
+     (wire (pts (xy 391.16 48.26) (xy 391.16 53.34)) (stroke (width 0) (type default)) (uuid e28b4305-ad84-453d-9e9e-6a950071615d)) (label "COL12" (at 391.16 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid dae35413-6905-46a8-8d97-26dfbe46e9bc)) (wire (pts (xy 401.32 48.26) (xy 405.13 48.26)) (stroke (width 0) (type default)) (uuid 78789a52-c674-4a91-ada8-66c1b3c5589d)) (label "KEY13" (at 401.32 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2e6407a7-d9fe-4f1e-a849-4e5b4d5ef228)) (wire (pts (xy 412.75 48.26) (xy 412.75 53.34)) (stroke (width 0) (type default)) (uuid 8fbef028-8bde-4de4-87c5-37c68e36cec9)) (label "ROW0" (at 412.75 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c141f93f-5078-4bdb-aba7-49b7c508bb0e)) 
+    (symbol (lib_id "Switch:SW_Push") (at 457.2 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ac2e4283-e7da-4941-b908-4ea7c621ab4e)
+      (property "Reference" "SW14" (at 457.2 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Backspace" (at 457.2 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB" (at 457.2 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid abc6365c-4d54-41f5-807a-9864277050a7))(pin "2" (uuid 5a4943c0-1cac-4e27-847e-4e7bd02ca7b7))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW14") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 469.9 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 446f1deb-1e68-4fcd-b827-107c241ccf9c)
+      (property "Reference" "D14" (at 469.9 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 469.9 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 469.9 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f031ecb0-dbcd-4a57-98a3-63b972f66526))(pin "2" (uuid 9e6496fe-602e-4cb2-aa3f-771d2fcba0ad))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D14") (unit 1)))))
+     (wire (pts (xy 452.12 48.26) (xy 452.12 53.34)) (stroke (width 0) (type default)) (uuid 24ca2738-f505-47ee-8364-c0412bc1917d)) (label "COL14" (at 452.12 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 817a341c-7a4f-400e-9bc9-89ad2d2dda52)) (wire (pts (xy 462.28 48.26) (xy 466.09 48.26)) (stroke (width 0) (type default)) (uuid 2906e80c-b19c-4062-b3cc-db55a8fcea93)) (label "KEY14" (at 462.28 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 30dee8b8-1799-41b0-ba15-3c7cac6d5910)) (wire (pts (xy 473.71 48.26) (xy 473.71 53.34)) (stroke (width 0) (type default)) (uuid b5bfc79e-655d-4f93-b78f-64b5424c6d5f)) (label "ROW0" (at 473.71 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid adf8003b-7a6e-4549-ac57-092e13cb4ee8)) 
+    (symbol (lib_id "Switch:SW_Push") (at 487.68 48.26 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3eb956de-e23a-403e-86f6-42999a1dfbb2)
+      (property "Reference" "SW15" (at 487.68 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Del" (at 487.68 51.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 487.68 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 2a4f2fa6-fb1f-42e4-b30c-6e919dd0da4c))(pin "2" (uuid b736d331-947b-44b3-a54e-40f4f7255cbc))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW15") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 500.38 48.26 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6f5f7edd-d2e0-41a0-80ce-0dfc31a3913c)
+      (property "Reference" "D15" (at 500.38 45.46 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 500.38 51.06 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 500.38 48.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 921ba9dd-d6d6-4699-a136-9e4e1bd01f52))(pin "2" (uuid e75b1ca7-ba4d-419b-ae9e-a69c76d7d21e))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D15") (unit 1)))))
+     (wire (pts (xy 482.6 48.26) (xy 482.6 53.34)) (stroke (width 0) (type default)) (uuid 5b09ae17-fe10-444d-a9aa-59a9565d7010)) (label "COL15" (at 482.6 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9bae99b1-db6e-415e-988a-f415862a2170)) (wire (pts (xy 492.76 48.26) (xy 496.57 48.26)) (stroke (width 0) (type default)) (uuid 1b82fbf2-e15f-47da-be0c-25e167c3cbb5)) (label "KEY15" (at 492.76 48.26 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ceb8ce96-a0e7-4146-b7ac-a7254b505095)) (wire (pts (xy 504.19 48.26) (xy 504.19 53.34)) (stroke (width 0) (type default)) (uuid eaa20fd8-9252-4806-8f12-ad1aa32b03df)) (label "ROW0" (at 504.19 53.34 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b82d5d31-9146-4f67-87a7-0650225c696d)) 
+    (symbol (lib_id "Switch:SW_Push") (at 30.48 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 0ffb8c61-78aa-45d4-ac69-183365022577)
+      (property "Reference" "SW16" (at 30.48 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Tab" (at 30.48 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 30.48 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 69bceed7-f80d-479a-90c8-77de2e472153))(pin "2" (uuid 74a74b36-c280-405c-95b6-ca451c07bf34))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW16") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 43.18 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4333a8c0-f59e-430b-a2cc-c6b07d793430)
+      (property "Reference" "D16" (at 43.18 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 43.18 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 43.18 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a8709bb1-221d-40f7-b044-42b2b2a7a46c))(pin "2" (uuid 215d90d0-b6a3-4102-a818-6635e20dacfb))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D16") (unit 1)))))
+     (wire (pts (xy 25.4 73.66) (xy 25.4 78.74)) (stroke (width 0) (type default)) (uuid 53aaa0ae-4d7e-4362-9f73-59ae657adc8d)) (label "COL0" (at 25.4 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 731bc2f2-0d12-4bca-aec5-6e7741b0de1f)) (wire (pts (xy 35.56 73.66) (xy 39.37 73.66)) (stroke (width 0) (type default)) (uuid 3ce4a119-767c-43ae-8267-7f0889be8ad0)) (label "KEY16" (at 35.56 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid daadf755-375a-4107-887c-7caef133df3b)) (wire (pts (xy 46.99 73.66) (xy 46.99 78.74)) (stroke (width 0) (type default)) (uuid abf33e69-18b0-4ee0-ad54-b37c1b1f1b76)) (label "ROW1" (at 46.99 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid af7a9a54-9dd5-470d-8dd6-6a782bddaf4f)) 
+    (symbol (lib_id "Switch:SW_Push") (at 91.44 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 78d76737-41ed-43dd-b1df-bd513c589e17)
+      (property "Reference" "SW17" (at 91.44 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Q" (at 91.44 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 91.44 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e0d962a7-f25d-45b1-b365-20fd31438002))(pin "2" (uuid efb2b031-7ca9-46b9-a281-1f95cc444a0a))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW17") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 104.14 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 2dc139bb-32be-44b0-96a7-eb0fbef94e6f)
+      (property "Reference" "D17" (at 104.14 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 104.14 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 104.14 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 008d7fd1-e67e-4989-9d93-3cde084cb017))(pin "2" (uuid bc99ec8c-f37d-45d3-8729-0b20b3edaa5c))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D17") (unit 1)))))
+     (wire (pts (xy 86.36 73.66) (xy 86.36 78.74)) (stroke (width 0) (type default)) (uuid 13ce3e1b-3842-4352-b10a-7ebf8d2898e6)) (label "COL2" (at 86.36 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 96f6a0c8-7507-4753-a6be-d80091f3ccb9)) (wire (pts (xy 96.52 73.66) (xy 100.33 73.66)) (stroke (width 0) (type default)) (uuid 342e6c7f-913d-448e-9183-0b143a44c7e0)) (label "KEY17" (at 96.52 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4d28b53e-1737-4179-876f-4602b0d4ee12)) (wire (pts (xy 107.95 73.66) (xy 107.95 78.74)) (stroke (width 0) (type default)) (uuid b85426a6-1d54-47f2-9efa-7570e4b77457)) (label "ROW1" (at 107.95 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8ea4e71d-766d-4eec-9550-da39d8a3dfdd)) 
+    (symbol (lib_id "Switch:SW_Push") (at 121.92 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid a2094342-5410-420d-b0e7-28788799604e)
+      (property "Reference" "SW18" (at 121.92 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "W" (at 121.92 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 121.92 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 0c7c364f-785e-44f1-9f99-e42404325745))(pin "2" (uuid a19bf063-5bd3-4220-9372-03f05d920d9e))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW18") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 134.62 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 7ad573ff-28b2-40b5-90b1-26fd55cc0458)
+      (property "Reference" "D18" (at 134.62 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 134.62 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 134.62 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid aa3b9e86-0f84-4c58-8962-58aff8794d6b))(pin "2" (uuid ff8bc1cc-fea4-4ab8-b6af-a28318c69407))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D18") (unit 1)))))
+     (wire (pts (xy 116.84 73.66) (xy 116.84 78.74)) (stroke (width 0) (type default)) (uuid e954fe0a-0770-45df-af05-dc6d7246d4b6)) (label "COL3" (at 116.84 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 00faa247-7452-4838-b8bf-f35e932b72af)) (wire (pts (xy 127 73.66) (xy 130.81 73.66)) (stroke (width 0) (type default)) (uuid 83b74d0c-295f-493f-b76b-9097189c1b6b)) (label "KEY18" (at 127 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid a3432d0e-e7e8-4dce-a39b-43d043c8d590)) (wire (pts (xy 138.43 73.66) (xy 138.43 78.74)) (stroke (width 0) (type default)) (uuid 2b5ddf86-55b6-4a35-afc0-b51d6346e79e)) (label "ROW1" (at 138.43 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ad112a9b-d064-4a50-b4ca-97e2ce61e2f7)) 
+    (symbol (lib_id "Switch:SW_Push") (at 152.4 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid c21241db-9ba9-414e-922a-9d2f4155e028)
+      (property "Reference" "SW19" (at 152.4 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "E" (at 152.4 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 152.4 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 3d83ecd4-824e-491b-a29a-7505ece173ca))(pin "2" (uuid ab0d6ee8-0ab8-4a28-ab49-2d8ee85f1449))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW19") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 165.1 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 45bfe405-49fd-41eb-8fc2-7f54be411708)
+      (property "Reference" "D19" (at 165.1 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 165.1 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 165.1 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid c5601cfa-4ad8-4bf4-a837-d4f90e16b1ab))(pin "2" (uuid 3550a648-c98d-40c5-bd66-70cefe53e3de))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D19") (unit 1)))))
+     (wire (pts (xy 147.32 73.66) (xy 147.32 78.74)) (stroke (width 0) (type default)) (uuid c6528fb3-2872-4714-b479-2833011d7a59)) (label "COL4" (at 147.32 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid e0f75ef7-7344-427a-9690-1e801e665c4a)) (wire (pts (xy 157.48 73.66) (xy 161.29 73.66)) (stroke (width 0) (type default)) (uuid 1617b7a6-613e-4087-9bb0-256c72d0082b)) (label "KEY19" (at 157.48 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 70e16a3d-06d6-4b6c-8748-ebbf82024a06)) (wire (pts (xy 168.91 73.66) (xy 168.91 78.74)) (stroke (width 0) (type default)) (uuid b09ec965-c515-4c37-a07d-b1b602864958)) (label "ROW1" (at 168.91 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9d7737e1-b215-467b-bf8a-9d33f8c63105)) 
+    (symbol (lib_id "Switch:SW_Push") (at 182.88 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f10067ca-4d28-46bd-967d-3bcbad42d5b1)
+      (property "Reference" "SW20" (at 182.88 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "R" (at 182.88 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 182.88 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b66cebcd-a3a9-418a-bbba-fcf748505783))(pin "2" (uuid 591fb7d6-59cf-49fd-872e-0f733c550799))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW20") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 195.58 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 317df1bf-15ec-41e6-a303-7f2404ccca38)
+      (property "Reference" "D20" (at 195.58 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 195.58 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 195.58 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f5b34df5-3778-4a78-a562-f5ad855c681e))(pin "2" (uuid b6782f0a-61bb-4e53-a07f-7dc787343907))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D20") (unit 1)))))
+     (wire (pts (xy 177.8 73.66) (xy 177.8 78.74)) (stroke (width 0) (type default)) (uuid 305b94c7-fbfb-4177-94d0-7a9008a17eac)) (label "COL5" (at 177.8 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 06e87f58-bff6-4ea9-943b-6c181f98ca1c)) (wire (pts (xy 187.96 73.66) (xy 191.77 73.66)) (stroke (width 0) (type default)) (uuid 24118877-7539-418b-9b2f-bbe08378bf89)) (label "KEY20" (at 187.96 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f014625d-e856-41e1-aa15-f5332d441531)) (wire (pts (xy 199.39 73.66) (xy 199.39 78.74)) (stroke (width 0) (type default)) (uuid c1d025d7-3363-4793-a425-b70d86a1ec26)) (label "ROW1" (at 199.39 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 5251f850-9354-49e6-8d0e-600c31280b13)) 
+    (symbol (lib_id "Switch:SW_Push") (at 213.36 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 623af78f-ef76-48e5-a392-324774fc8da5)
+      (property "Reference" "SW21" (at 213.36 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "T" (at 213.36 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 213.36 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 9bbd950a-5b3f-4e71-bfab-0cee79d2c289))(pin "2" (uuid 3dcb5eed-7862-4111-904b-488a06951126))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW21") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 226.06 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 9875b4ed-dba7-4cca-b97c-44a514edc60e)
+      (property "Reference" "D21" (at 226.06 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 226.06 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 226.06 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f9f4aad1-487d-44e1-b3ea-6442d2d63349))(pin "2" (uuid 05121c22-8cd2-4be7-93c4-cbef8134f38f))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D21") (unit 1)))))
+     (wire (pts (xy 208.28 73.66) (xy 208.28 78.74)) (stroke (width 0) (type default)) (uuid e6e72814-f2a2-4694-8017-729a50f187c6)) (label "COL6" (at 208.28 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b5773308-d78b-4e11-96bc-aee4c2f420af)) (wire (pts (xy 218.44 73.66) (xy 222.25 73.66)) (stroke (width 0) (type default)) (uuid 3fc7154e-9cc7-4af0-b247-299bfd22938c)) (label "KEY21" (at 218.44 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4c3e5fd0-4358-407f-9ff7-2429d5529355)) (wire (pts (xy 229.87 73.66) (xy 229.87 78.74)) (stroke (width 0) (type default)) (uuid fa02aa35-8066-49f2-867e-fc77d8431eed)) (label "ROW1" (at 229.87 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9bbe7841-5af7-4273-9a09-c2401f79d43e)) 
+    (symbol (lib_id "Switch:SW_Push") (at 243.84 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid fa0bc89d-4d88-4044-8a81-bb033d556055)
+      (property "Reference" "SW22" (at 243.84 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Y" (at 243.84 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 243.84 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 23cb18cd-cbff-4b01-8fb4-2684ade8b9a3))(pin "2" (uuid b83d0794-ab59-478f-b9f0-d3409e1b9476))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW22") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 256.54 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 093ecea7-a0ab-49a6-b59d-5960b979c91a)
+      (property "Reference" "D22" (at 256.54 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 256.54 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 256.54 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 8452a296-d04f-4581-a76a-f90190e6daba))(pin "2" (uuid d96d118a-a0b6-4f70-b5cf-708207cc790e))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D22") (unit 1)))))
+     (wire (pts (xy 238.76 73.66) (xy 238.76 78.74)) (stroke (width 0) (type default)) (uuid 8cae0145-2f1a-4472-896c-74dca5ccd92a)) (label "COL7" (at 238.76 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 51370358-ec46-43a0-9840-b23a4ec5b41c)) (wire (pts (xy 248.92 73.66) (xy 252.73 73.66)) (stroke (width 0) (type default)) (uuid a826cd36-ffd5-4b33-98a9-b74cc87bba7b)) (label "KEY22" (at 248.92 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ca0a3275-44ce-42e8-910c-1a31207e977b)) (wire (pts (xy 260.35 73.66) (xy 260.35 78.74)) (stroke (width 0) (type default)) (uuid 61e06b70-46cc-4032-ba4a-bea1eec42874)) (label "ROW1" (at 260.35 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 93fee864-3b4e-43ab-8a6c-90ca1219606d)) 
+    (symbol (lib_id "Switch:SW_Push") (at 274.32 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 10f003fa-98fd-4471-b8f2-3d133a297722)
+      (property "Reference" "SW23" (at 274.32 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "U" (at 274.32 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 274.32 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid ae833940-58a2-4b61-b014-69a5cac81571))(pin "2" (uuid 1a5472d6-2084-4997-a910-5133e63f3c04))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW23") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 287.02 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 068f4bb5-fe63-49f0-a8a2-7af490b2f436)
+      (property "Reference" "D23" (at 287.02 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 287.02 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 287.02 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid aa2d807c-a5f7-4f84-9c56-ed85634b2169))(pin "2" (uuid 643a8f4b-b243-4f74-9c1e-7172c3927b01))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D23") (unit 1)))))
+     (wire (pts (xy 269.24 73.66) (xy 269.24 78.74)) (stroke (width 0) (type default)) (uuid 090012bf-5766-4496-918c-553415346d58)) (label "COL8" (at 269.24 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d78f8d08-b9bd-4549-9fce-ecda25265aa2)) (wire (pts (xy 279.4 73.66) (xy 283.21 73.66)) (stroke (width 0) (type default)) (uuid d6012cc6-ae61-4deb-9556-b7b4851e0a78)) (label "KEY23" (at 279.4 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8697a301-d2b3-4fd4-bdae-7c2766b425a8)) (wire (pts (xy 290.83 73.66) (xy 290.83 78.74)) (stroke (width 0) (type default)) (uuid 6876ec36-2a0e-437a-b31e-148efcd259f4)) (label "ROW1" (at 290.83 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8377a3c8-b216-4dd6-a2c0-4ae67e214f36)) 
+    (symbol (lib_id "Switch:SW_Push") (at 304.8 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ed312897-8d2d-4a85-9c95-30cb823a70c9)
+      (property "Reference" "SW24" (at 304.8 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "I" (at 304.8 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 304.8 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid fa14e7d9-d272-40dd-a7f7-df57ae8b795b))(pin "2" (uuid 8b552507-cd9b-4ee5-89df-b2496042ec75))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW24") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 317.5 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid dc84796e-5edf-4169-9ea4-d12659368084)
+      (property "Reference" "D24" (at 317.5 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 317.5 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 317.5 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7552a94f-b36f-467f-a6e7-bac755e2016f))(pin "2" (uuid b8152ef3-0833-49f9-9654-146e8ccd3275))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D24") (unit 1)))))
+     (wire (pts (xy 299.72 73.66) (xy 299.72 78.74)) (stroke (width 0) (type default)) (uuid 6b8875dc-169e-4da9-8c30-b2c71e65e84e)) (label "COL9" (at 299.72 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4c51fa90-d16d-4f9c-9c13-556fcd6e335d)) (wire (pts (xy 309.88 73.66) (xy 313.69 73.66)) (stroke (width 0) (type default)) (uuid 4939c86a-a0dd-45c5-b1c0-6ff6085382ea)) (label "KEY24" (at 309.88 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 0adfb938-056b-4451-b66c-58a6434711be)) (wire (pts (xy 321.31 73.66) (xy 321.31 78.74)) (stroke (width 0) (type default)) (uuid a5bd9fb1-486f-443e-8c68-176c56e002a2)) (label "ROW1" (at 321.31 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid fcc51197-30df-4fa8-b75b-4a11b2e176d0)) 
+    (symbol (lib_id "Switch:SW_Push") (at 335.28 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6f706305-e826-4de3-a8f3-06744b2bc283)
+      (property "Reference" "SW25" (at 335.28 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "O" (at 335.28 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 335.28 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 531f0ec2-5c06-43d2-9d27-8fba9358f1e0))(pin "2" (uuid fd2bb760-3efd-49e6-89c7-addf49c45cd2))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW25") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 347.98 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 01f24192-fd94-4d4d-a665-74cfe8338771)
+      (property "Reference" "D25" (at 347.98 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 347.98 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 347.98 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 4ac0a0af-58ee-46fe-8b6e-cc25e3b68c4a))(pin "2" (uuid 3f1ca046-4f1e-447d-8347-73f13091dbfe))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D25") (unit 1)))))
+     (wire (pts (xy 330.2 73.66) (xy 330.2 78.74)) (stroke (width 0) (type default)) (uuid 3c26ec3c-84c2-45a7-bf7b-1449836fce10)) (label "COL10" (at 330.2 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8be683dc-9526-4002-a894-addbeda36d2d)) (wire (pts (xy 340.36 73.66) (xy 344.17 73.66)) (stroke (width 0) (type default)) (uuid 9bc996f4-37f6-408c-8360-046edc02b1bb)) (label "KEY25" (at 340.36 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 51ba165c-fb0c-4a1f-858d-c411b6fe8212)) (wire (pts (xy 351.79 73.66) (xy 351.79 78.74)) (stroke (width 0) (type default)) (uuid f4280b8a-2384-43b5-aef7-0566310a0b97)) (label "ROW1" (at 351.79 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 77b9f7f4-78ca-425f-9362-e2b6ebaf6bf6)) 
+    (symbol (lib_id "Switch:SW_Push") (at 365.76 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d59d47a1-8311-4292-a61e-1b4be699b100)
+      (property "Reference" "SW26" (at 365.76 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "P" (at 365.76 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 365.76 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid de2041d1-dcf7-4812-a99f-89bf4e640875))(pin "2" (uuid 5a007e27-1c5c-4901-983d-25ad37080897))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW26") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 378.46 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 32ed9f76-7bf5-4543-8f96-8468fa87137f)
+      (property "Reference" "D26" (at 378.46 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 378.46 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 378.46 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid bb87c382-b570-4548-80e6-eb482919c541))(pin "2" (uuid 626ae2ac-cb49-4439-a295-9c57edfc2b67))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D26") (unit 1)))))
+     (wire (pts (xy 360.68 73.66) (xy 360.68 78.74)) (stroke (width 0) (type default)) (uuid 69d1bc91-4c13-4557-a72a-30de2179e459)) (label "COL11" (at 360.68 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 86dfbbec-79eb-4b1f-b0d1-8ddb1ab9a55c)) (wire (pts (xy 370.84 73.66) (xy 374.65 73.66)) (stroke (width 0) (type default)) (uuid 7cbc08a6-549f-4672-a758-06a3ee7706d6)) (label "KEY26" (at 370.84 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f65164d9-9cf9-4e22-b254-23d3d266ab0a)) (wire (pts (xy 382.27 73.66) (xy 382.27 78.74)) (stroke (width 0) (type default)) (uuid 8ac7d208-a480-41cd-9c67-f564446b26b1)) (label "ROW1" (at 382.27 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 94fbf4db-bd51-4e0d-a4c8-c797b0a9e7b0)) 
+    (symbol (lib_id "Switch:SW_Push") (at 396.24 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b9d7c2c8-f7b0-4ccc-bba0-61db44811dcb)
+      (property "Reference" "SW27" (at 396.24 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "[" (at 396.24 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 396.24 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 986ef7bf-8975-44ff-89f7-1a36fa7af5b0))(pin "2" (uuid 8a8032f3-61b9-47b1-8602-edaea4b2391f))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW27") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 408.94 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ed818ea5-9446-4546-bcd2-c42a2ef3af40)
+      (property "Reference" "D27" (at 408.94 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 408.94 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 408.94 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7bb7a3fc-a523-4f3a-b5e1-79ef3d6cea45))(pin "2" (uuid 51a8a620-015c-4fe9-84ff-103ae36f4937))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D27") (unit 1)))))
+     (wire (pts (xy 391.16 73.66) (xy 391.16 78.74)) (stroke (width 0) (type default)) (uuid f66e7cce-5044-4462-bee8-54e7d2012e31)) (label "COL12" (at 391.16 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid af1158c7-fbda-4f96-a6a2-1c799403ff0a)) (wire (pts (xy 401.32 73.66) (xy 405.13 73.66)) (stroke (width 0) (type default)) (uuid 677c3c3a-aac6-428d-aa18-42dc6a9cfa69)) (label "KEY27" (at 401.32 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7a4c2c32-6221-4913-af5a-594b29050f3c)) (wire (pts (xy 412.75 73.66) (xy 412.75 78.74)) (stroke (width 0) (type default)) (uuid d97b7144-40e9-428b-a55a-f1cf22b47215)) (label "ROW1" (at 412.75 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 96d5f770-a163-47ba-bd31-8913779e14e3)) 
+    (symbol (lib_id "Switch:SW_Push") (at 426.72 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b94e263f-9212-442c-8905-478c6f8bf6a4)
+      (property "Reference" "SW28" (at 426.72 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "]" (at 426.72 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 426.72 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid c5bb2c54-4ac0-4648-b1ee-8f8015e22a05))(pin "2" (uuid 868c61cd-71e0-482c-9f20-16c7df6479d6))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW28") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 439.42 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f32a741a-198e-4552-bfc4-461771903399)
+      (property "Reference" "D28" (at 439.42 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 439.42 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 439.42 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 526f6719-68ae-4c60-ae5f-a6b4f289044c))(pin "2" (uuid 2e1d54d1-13e9-4915-b1ca-0f1323b92dc4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D28") (unit 1)))))
+     (wire (pts (xy 421.64 73.66) (xy 421.64 78.74)) (stroke (width 0) (type default)) (uuid f150a49e-2cac-43d6-9941-6775aa47402d)) (label "COL13" (at 421.64 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 003c45ef-b756-428a-a32e-e8dd9e0d6b57)) (wire (pts (xy 431.8 73.66) (xy 435.61 73.66)) (stroke (width 0) (type default)) (uuid 3d532993-056d-4a75-ae43-36c82a5b1100)) (label "KEY28" (at 431.8 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 295a91c2-391c-4381-8493-3cc305b4fca2)) (wire (pts (xy 443.23 73.66) (xy 443.23 78.74)) (stroke (width 0) (type default)) (uuid f42848d1-2f20-4f4b-84b4-75d4fa5e2fce)) (label "ROW1" (at 443.23 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid fbfc5426-6347-48f7-a614-a79131f358f6)) 
+    (symbol (lib_id "Switch:SW_Push") (at 457.2 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 7322e848-7233-4225-aa11-c832cf329dc6)
+      (property "Reference" "SW29" (at 457.2 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "\\" (at 457.2 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 457.2 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 6a33d6d2-be2e-41ef-9580-539fbf12f5d5))(pin "2" (uuid b02e9214-fb9d-4ddc-b22d-2e6112a58019))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW29") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 469.9 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 2bcf4ce6-1e0c-4988-ba53-5ebd2124d5e2)
+      (property "Reference" "D29" (at 469.9 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 469.9 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 469.9 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 9c128d15-37b3-4015-9388-5e8ca7078ca1))(pin "2" (uuid 76d192a1-d3b7-40af-a6ed-585e24ca7d56))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D29") (unit 1)))))
+     (wire (pts (xy 452.12 73.66) (xy 452.12 78.74)) (stroke (width 0) (type default)) (uuid 2b4e12cd-5c4d-4d91-8d5a-d4c15c1a9f1c)) (label "COL14" (at 452.12 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ce320f68-fc40-457c-a04a-90d36ac69d0c)) (wire (pts (xy 462.28 73.66) (xy 466.09 73.66)) (stroke (width 0) (type default)) (uuid 79a49efa-f94b-4180-9710-4101cde012e4)) (label "KEY29" (at 462.28 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9d74d43c-225d-4bbe-9d08-eccb4c564939)) (wire (pts (xy 473.71 73.66) (xy 473.71 78.74)) (stroke (width 0) (type default)) (uuid 65b677aa-5730-4339-977f-3711f5b1617e)) (label "ROW1" (at 473.71 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 82ef8052-76de-4250-8a75-8eca6d73958f)) 
+    (symbol (lib_id "Switch:SW_Push") (at 487.68 73.66 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 45f4c3bc-f755-49b4-9ba8-2a415ec8b3ca)
+      (property "Reference" "SW30" (at 487.68 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "PgUp" (at 487.68 76.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 487.68 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 77f046b1-6296-4cfa-bf9f-0ab050c2a485))(pin "2" (uuid 1f3ca189-847e-4d5a-8dbe-ff018a381a5c))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW30") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 500.38 73.66 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4e8589e1-9430-47f0-9d59-a1f5020a673a)
+      (property "Reference" "D30" (at 500.38 70.86 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 500.38 76.46 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 500.38 73.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid bf98b81e-efc3-4be9-b6af-7dc22e28a5c7))(pin "2" (uuid 18ee6c54-62b0-415b-9ee7-6c0ecbf48d2e))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D30") (unit 1)))))
+     (wire (pts (xy 482.6 73.66) (xy 482.6 78.74)) (stroke (width 0) (type default)) (uuid 889e8985-7e78-42f2-b2c5-284f1582f862)) (label "COL15" (at 482.6 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f5069f15-73dc-4a81-85bb-dc704f8f3423)) (wire (pts (xy 492.76 73.66) (xy 496.57 73.66)) (stroke (width 0) (type default)) (uuid b46acced-6b4c-423d-a9a8-234c617af02f)) (label "KEY30" (at 492.76 73.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f15eca1b-ae9b-4353-8941-ae4f41dd04f5)) (wire (pts (xy 504.19 73.66) (xy 504.19 78.74)) (stroke (width 0) (type default)) (uuid ac41e8d8-358f-47f9-ae62-1618b8c62eae)) (label "ROW1" (at 504.19 78.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7eaa5cd9-6cdf-48c0-a630-4cc6ae5d8ed4)) 
+    (symbol (lib_id "Switch:SW_Push") (at 30.48 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 2a12e37f-6e59-40b6-b6fa-7552b0c01559)
+      (property "Reference" "SW31" (at 30.48 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Caps" (at 30.48 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 30.48 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 465d2dc4-2829-4db7-9867-de76c6070724))(pin "2" (uuid 69b27641-8230-4b80-8568-e3bd04a272f0))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW31") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 43.18 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid a1590ebf-e628-4f0c-aaaf-5dcc7deee427)
+      (property "Reference" "D31" (at 43.18 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 43.18 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 43.18 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 465dc19c-ee66-4243-86c5-68878e7e0cc8))(pin "2" (uuid f6933235-6941-432b-b404-939da39b30c5))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D31") (unit 1)))))
+     (wire (pts (xy 25.4 99.06) (xy 25.4 104.14)) (stroke (width 0) (type default)) (uuid e193634b-4993-4afd-b860-80051abb464e)) (label "COL0" (at 25.4 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ca233258-e9f8-4eef-a2bf-b4fa9f6769f2)) (wire (pts (xy 35.56 99.06) (xy 39.37 99.06)) (stroke (width 0) (type default)) (uuid 1854d428-324f-499b-bd48-96bb49c50818)) (label "KEY31" (at 35.56 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2b5f2ce4-fc8b-45ad-95c7-64d11d06332c)) (wire (pts (xy 46.99 99.06) (xy 46.99 104.14)) (stroke (width 0) (type default)) (uuid e2178dce-da48-44c0-b6e5-de03b52e89e3)) (label "ROW2" (at 46.99 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3f35bdc1-cd51-4629-a9b0-b5111ade0b9a)) 
+    (symbol (lib_id "Switch:SW_Push") (at 91.44 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 26d01a13-1585-499e-a81a-15181156d691)
+      (property "Reference" "SW32" (at 91.44 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "A" (at 91.44 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 91.44 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 65a9464d-0195-4c6a-8a7e-be177ea2032d))(pin "2" (uuid 49f6251c-f8d3-484a-a4df-011ef2be6edf))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW32") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 104.14 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3ee093d3-6a14-4514-84ff-f477816e65ab)
+      (property "Reference" "D32" (at 104.14 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 104.14 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 104.14 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a8fbdfe3-96b8-4e90-b937-16fea6fd7c7d))(pin "2" (uuid 86e416d0-f27e-4b8c-8ff5-6f05186b2cf4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D32") (unit 1)))))
+     (wire (pts (xy 86.36 99.06) (xy 86.36 104.14)) (stroke (width 0) (type default)) (uuid 837318de-4468-4f74-8ea8-f656bd12db24)) (label "COL2" (at 86.36 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f227f31c-71fb-405b-b14c-70083d319f57)) (wire (pts (xy 96.52 99.06) (xy 100.33 99.06)) (stroke (width 0) (type default)) (uuid b09f7911-781b-4434-84cd-273da55702ec)) (label "KEY32" (at 96.52 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2a4afbef-5ebb-47a8-a47d-15d163eb3b82)) (wire (pts (xy 107.95 99.06) (xy 107.95 104.14)) (stroke (width 0) (type default)) (uuid 5c7f310c-428b-4f3b-a3f7-73b7b3e4dbaa)) (label "ROW2" (at 107.95 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 19eb6b0c-beaa-4427-a0c7-0aae5783e5d8)) 
+    (symbol (lib_id "Switch:SW_Push") (at 121.92 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f15a63b0-899d-4198-a189-413fdcf35035)
+      (property "Reference" "SW33" (at 121.92 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "S" (at 121.92 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 121.92 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d1b6ffe5-4293-4901-9997-16b21a941e44))(pin "2" (uuid 98d128f6-ac3f-4131-976e-8f7380656338))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW33") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 134.62 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 160000ce-7fa8-48e9-a0e4-8bfc1cf66f8d)
+      (property "Reference" "D33" (at 134.62 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 134.62 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 134.62 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e9f735ee-9f8d-428d-9ba1-75a50c5f799e))(pin "2" (uuid 1649003a-eb43-43f4-8f01-84b26ca3a654))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D33") (unit 1)))))
+     (wire (pts (xy 116.84 99.06) (xy 116.84 104.14)) (stroke (width 0) (type default)) (uuid 8d0cbf67-8fa9-4fa2-bcea-0f15a509e33f)) (label "COL3" (at 116.84 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 24c18602-8359-41e0-8bc6-2784400c9bfa)) (wire (pts (xy 127 99.06) (xy 130.81 99.06)) (stroke (width 0) (type default)) (uuid 274cfa88-1c4d-4de0-be78-4f53d6c356ca)) (label "KEY33" (at 127 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid a051f387-1f89-4672-84b8-8afa40cb094e)) (wire (pts (xy 138.43 99.06) (xy 138.43 104.14)) (stroke (width 0) (type default)) (uuid e894400c-4a83-41dc-8dda-99f947634903)) (label "ROW2" (at 138.43 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7754ca27-18ce-4c16-b04f-04c886784093)) 
+    (symbol (lib_id "Switch:SW_Push") (at 152.4 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 911b6c97-f39c-4426-8ca8-35b3334b8953)
+      (property "Reference" "SW34" (at 152.4 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "D" (at 152.4 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 152.4 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 542a2b59-70d0-4a99-ae4c-438491e07194))(pin "2" (uuid b9a8b665-c694-4008-99ae-d30450ec85dc))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW34") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 165.1 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 12228adc-cb25-48a1-b26c-fcc0cf8b0457)
+      (property "Reference" "D34" (at 165.1 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 165.1 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 165.1 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f811f81d-ec23-40d7-87a3-e546acde0d16))(pin "2" (uuid 339ed314-167f-4566-a22f-b68b139cf551))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D34") (unit 1)))))
+     (wire (pts (xy 147.32 99.06) (xy 147.32 104.14)) (stroke (width 0) (type default)) (uuid dd7bb03c-bf2b-48c2-9ccd-edfc4286a1de)) (label "COL4" (at 147.32 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid fb3580bc-a811-4f97-a451-5f44121a668d)) (wire (pts (xy 157.48 99.06) (xy 161.29 99.06)) (stroke (width 0) (type default)) (uuid e2329416-2fa0-449a-9b1e-80e42d898c83)) (label "KEY34" (at 157.48 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1c92c94f-b0f0-4a11-a257-484ab8cb629d)) (wire (pts (xy 168.91 99.06) (xy 168.91 104.14)) (stroke (width 0) (type default)) (uuid c271aac8-2bdf-4a82-a4d8-af284692b7ab)) (label "ROW2" (at 168.91 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid be112757-cba5-4073-8499-86fb7a28da9b)) 
+    (symbol (lib_id "Switch:SW_Push") (at 182.88 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 93423d89-3e4d-4029-a17d-72e6216372ac)
+      (property "Reference" "SW35" (at 182.88 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "F" (at 182.88 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 182.88 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d2506b32-44d3-4a2e-bf7d-c2021c020d0d))(pin "2" (uuid 3cbd6f2a-9433-4788-bd17-056d67048600))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW35") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 195.58 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid c9ad8ec7-2827-4424-b629-9af2136d930a)
+      (property "Reference" "D35" (at 195.58 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 195.58 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 195.58 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 77b614cd-9e52-40dd-a598-69db5cb91a3d))(pin "2" (uuid 19edacc5-7aa4-41da-89d8-3fcafac9a827))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D35") (unit 1)))))
+     (wire (pts (xy 177.8 99.06) (xy 177.8 104.14)) (stroke (width 0) (type default)) (uuid 47eeb763-f14f-41a4-904b-3b6b8528f62c)) (label "COL5" (at 177.8 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 5cc03d83-8cd4-425c-921a-de30ca766fa7)) (wire (pts (xy 187.96 99.06) (xy 191.77 99.06)) (stroke (width 0) (type default)) (uuid 1f2c5724-76c2-47a1-9cf8-26f07b7f9dc4)) (label "KEY35" (at 187.96 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8b23d3de-0ca1-45a8-8a5b-ce507e480037)) (wire (pts (xy 199.39 99.06) (xy 199.39 104.14)) (stroke (width 0) (type default)) (uuid 14a1e984-853e-47fa-a77b-9e6b0d94ce99)) (label "ROW2" (at 199.39 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 54b7e529-ece0-4fa9-bbc3-a26e65d766b3)) 
+    (symbol (lib_id "Switch:SW_Push") (at 213.36 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 50188a07-e02a-49c0-a7a6-7bf52f738fdc)
+      (property "Reference" "SW36" (at 213.36 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "G" (at 213.36 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 213.36 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 53294b0e-3213-46d8-9f05-824b372e6cba))(pin "2" (uuid 0e47fb44-7778-4536-9497-12a86a396e8d))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW36") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 226.06 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 893a4342-39e5-4f34-9cfb-c99ded7a3f1f)
+      (property "Reference" "D36" (at 226.06 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 226.06 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 226.06 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 84592654-d47e-4330-a78e-407b5a3a1601))(pin "2" (uuid 07136030-2b1d-486d-bb68-dcc3f8b48610))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D36") (unit 1)))))
+     (wire (pts (xy 208.28 99.06) (xy 208.28 104.14)) (stroke (width 0) (type default)) (uuid ea7cc9b9-d549-4ac4-8610-fc0b9941125b)) (label "COL6" (at 208.28 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 54b9cf26-2092-415d-bb53-e8967355cf23)) (wire (pts (xy 218.44 99.06) (xy 222.25 99.06)) (stroke (width 0) (type default)) (uuid 06773ea9-aecf-493d-93c7-65eaa1e54026)) (label "KEY36" (at 218.44 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 854b25ff-2ecb-42e2-9b3f-e3dba4989b66)) (wire (pts (xy 229.87 99.06) (xy 229.87 104.14)) (stroke (width 0) (type default)) (uuid cac5847a-370c-4140-b2d7-da86c52e3598)) (label "ROW2" (at 229.87 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d8eb33fc-e335-459f-9d3e-125755ac51e7)) 
+    (symbol (lib_id "Switch:SW_Push") (at 243.84 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 5e079b81-d5e1-44f5-8e95-bfb5688a40e3)
+      (property "Reference" "SW37" (at 243.84 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "H" (at 243.84 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 243.84 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 17627d10-d881-432f-92cd-703655cc82d8))(pin "2" (uuid 462f66dc-a525-4290-ad27-bec779a03047))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW37") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 256.54 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 7fd10d25-0565-442d-8975-2b08787c4d67)
+      (property "Reference" "D37" (at 256.54 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 256.54 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 256.54 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid bfd861ff-0de6-4e29-a13d-78cbeff8a932))(pin "2" (uuid cece3f76-e398-4537-8622-ef35562f1759))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D37") (unit 1)))))
+     (wire (pts (xy 238.76 99.06) (xy 238.76 104.14)) (stroke (width 0) (type default)) (uuid dcb61604-d1cb-479d-9702-365f47f17ee7)) (label "COL7" (at 238.76 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 40a92090-9092-4315-acd6-ff6bdc60c63e)) (wire (pts (xy 248.92 99.06) (xy 252.73 99.06)) (stroke (width 0) (type default)) (uuid 4ef3bee3-3e26-47db-b722-0853bad91e7d)) (label "KEY37" (at 248.92 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid bf4767cb-2b7f-49bc-a16d-e1bb58ffe6b9)) (wire (pts (xy 260.35 99.06) (xy 260.35 104.14)) (stroke (width 0) (type default)) (uuid 21792f62-b9b0-40ba-bd21-39f628e32ab1)) (label "ROW2" (at 260.35 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3ef91f91-25fb-43b4-868f-e6d38f498a1c)) 
+    (symbol (lib_id "Switch:SW_Push") (at 274.32 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 215942de-f614-415a-a57c-a06982444b32)
+      (property "Reference" "SW38" (at 274.32 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "J" (at 274.32 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 274.32 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 33afd508-e411-4456-b578-97166f184f58))(pin "2" (uuid eaa8fcb6-e05f-45bf-92f2-737d4b8de42f))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW38") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 287.02 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid bc159746-c38d-4b38-bd96-9240bfe27698)
+      (property "Reference" "D38" (at 287.02 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 287.02 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 287.02 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b6690ee5-4b70-4173-ac9a-5a669d0c3cfb))(pin "2" (uuid 927da6e5-cad5-4c72-838c-7eb3567796f5))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D38") (unit 1)))))
+     (wire (pts (xy 269.24 99.06) (xy 269.24 104.14)) (stroke (width 0) (type default)) (uuid ba809b6e-f7bb-48c5-bdf2-787af5a304a6)) (label "COL8" (at 269.24 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 909b378d-6480-4df9-a747-425d454f1aa2)) (wire (pts (xy 279.4 99.06) (xy 283.21 99.06)) (stroke (width 0) (type default)) (uuid 40bdf0a1-5adf-401b-a8fa-9c41494da479)) (label "KEY38" (at 279.4 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 741de60d-3d24-4596-99c8-3190f86d905b)) (wire (pts (xy 290.83 99.06) (xy 290.83 104.14)) (stroke (width 0) (type default)) (uuid 2e3ad0f6-a48a-4fb0-9199-1c47857aff2d)) (label "ROW2" (at 290.83 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f7c6859c-c5d5-417d-a41e-afda723d27be)) 
+    (symbol (lib_id "Switch:SW_Push") (at 304.8 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 7902701b-a732-4056-93d6-47e5d942fa13)
+      (property "Reference" "SW39" (at 304.8 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "K" (at 304.8 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 304.8 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f35d5b01-ef61-4688-bcc7-ea22b216a4ef))(pin "2" (uuid 4335d221-2207-4208-9a64-e0cd3fd500d4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW39") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 317.5 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid db89808c-fc5d-4a1a-8f59-65d8ff54e055)
+      (property "Reference" "D39" (at 317.5 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 317.5 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 317.5 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b8474c59-1301-4c69-9c2e-77eb1690c481))(pin "2" (uuid ed04e26a-b8dc-41fa-b935-008a5c87bfc2))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D39") (unit 1)))))
+     (wire (pts (xy 299.72 99.06) (xy 299.72 104.14)) (stroke (width 0) (type default)) (uuid df9f80be-c7bf-4b49-b901-40666c420dd2)) (label "COL9" (at 299.72 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4b86f49a-5b13-4332-91d5-da0b7bb92097)) (wire (pts (xy 309.88 99.06) (xy 313.69 99.06)) (stroke (width 0) (type default)) (uuid 49a633b3-7a76-499c-a929-10433cc1fc12)) (label "KEY39" (at 309.88 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid faaa6bb8-1fec-4dae-a48b-d66490c8deda)) (wire (pts (xy 321.31 99.06) (xy 321.31 104.14)) (stroke (width 0) (type default)) (uuid 01876e23-e8cd-4a85-8df3-aae7fd63fccf)) (label "ROW2" (at 321.31 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 10190c3f-2580-4022-8d01-681450974010)) 
+    (symbol (lib_id "Switch:SW_Push") (at 335.28 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 75738658-e2ec-4193-a1c8-f90752a820f2)
+      (property "Reference" "SW40" (at 335.28 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "L" (at 335.28 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 335.28 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 35bbdc82-7ba5-4cf9-bcfa-23923e079d9c))(pin "2" (uuid d8e2576d-f864-4b75-96c4-fea2420d2c6a))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW40") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 347.98 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid efb32c12-9d76-4399-a374-c7ff60dd7cc6)
+      (property "Reference" "D40" (at 347.98 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 347.98 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 347.98 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e0691b35-c10a-4058-83cc-2d45fbe5daf3))(pin "2" (uuid 3c1539ce-11ca-4c7b-ae9f-4fd3f786777d))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D40") (unit 1)))))
+     (wire (pts (xy 330.2 99.06) (xy 330.2 104.14)) (stroke (width 0) (type default)) (uuid 1a2a9dc6-22e8-4383-8445-dd1ed67cf5d2)) (label "COL10" (at 330.2 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2398cde5-83ab-4900-9c37-0a298e109352)) (wire (pts (xy 340.36 99.06) (xy 344.17 99.06)) (stroke (width 0) (type default)) (uuid b19f079d-6fdb-47bd-b9bb-6be0ef6cded8)) (label "KEY40" (at 340.36 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid cc699979-fe88-41c3-bfbe-8979813d4231)) (wire (pts (xy 351.79 99.06) (xy 351.79 104.14)) (stroke (width 0) (type default)) (uuid 80e90961-0cc3-488d-9248-d705ce7d38d2)) (label "ROW2" (at 351.79 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 11fe5aeb-5ffc-414e-9fcb-11c548d5e1c1)) 
+    (symbol (lib_id "Switch:SW_Push") (at 365.76 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3c039a04-e9fe-420b-ba9b-b248e87833c6)
+      (property "Reference" "SW41" (at 365.76 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" ";" (at 365.76 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 365.76 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 785579dc-d443-451e-a38d-fcab3b19c956))(pin "2" (uuid 4517e5fc-4598-425a-9cd8-a8b406e424b5))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW41") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 378.46 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4f9ecc4e-78ff-4c81-b11f-329faa82858c)
+      (property "Reference" "D41" (at 378.46 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 378.46 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 378.46 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 39927fa2-3a6a-4c97-8ebe-a9a36d6af971))(pin "2" (uuid 9644d61f-bc9b-4db4-88ff-9b04bef11f44))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D41") (unit 1)))))
+     (wire (pts (xy 360.68 99.06) (xy 360.68 104.14)) (stroke (width 0) (type default)) (uuid dc438a13-9767-4fc9-940b-3771a09ea8ff)) (label "COL11" (at 360.68 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2f88c172-91d3-4f73-ac7b-cd98ca3ba7e6)) (wire (pts (xy 370.84 99.06) (xy 374.65 99.06)) (stroke (width 0) (type default)) (uuid e072d632-c8d8-4f40-9285-5d4641305370)) (label "KEY41" (at 370.84 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 096d4957-b0bd-4bfd-8376-49123501460a)) (wire (pts (xy 382.27 99.06) (xy 382.27 104.14)) (stroke (width 0) (type default)) (uuid 28ae08d4-ea1d-4a69-bb7a-845b0b525b8a)) (label "ROW2" (at 382.27 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid d0115254-9f34-46f7-a858-1e290c182731)) 
+    (symbol (lib_id "Switch:SW_Push") (at 396.24 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 78453bec-0e5f-4338-8bdd-b49902420a77)
+      (property "Reference" "SW42" (at 396.24 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "'" (at 396.24 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 396.24 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7a87c1bc-3715-4dbe-81e5-d74f525d8b5a))(pin "2" (uuid 5288745f-92d2-4fcd-b1e8-a68ca098fb6f))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW42") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 408.94 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 5ed649a0-577e-48b8-9b50-e47544a05cce)
+      (property "Reference" "D42" (at 408.94 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 408.94 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 408.94 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 6495a5a7-5acf-4ee8-8410-01a2c1bf6d9a))(pin "2" (uuid b547fba5-808e-4bcc-a982-66b63599c7ce))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D42") (unit 1)))))
+     (wire (pts (xy 391.16 99.06) (xy 391.16 104.14)) (stroke (width 0) (type default)) (uuid c39849d7-78c3-4b03-94f4-1a2d3513a8b7)) (label "COL12" (at 391.16 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 394f8a40-58b5-4891-9702-74f17037317c)) (wire (pts (xy 401.32 99.06) (xy 405.13 99.06)) (stroke (width 0) (type default)) (uuid 91888545-47a5-4633-81dc-888713d25ea6)) (label "KEY42" (at 401.32 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid dd84956d-77eb-458d-9615-128ba01c980b)) (wire (pts (xy 412.75 99.06) (xy 412.75 104.14)) (stroke (width 0) (type default)) (uuid 33fcc3b9-941a-4c62-a962-38d7826ff008)) (label "ROW2" (at 412.75 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 81026ecd-741c-4d60-98cd-2b37508527a3)) 
+    (symbol (lib_id "Switch:SW_Push") (at 426.72 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid dd36fbfd-6cb3-4c5c-a4c4-b5187e5e468b)
+      (property "Reference" "SW43" (at 426.72 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Enter" (at 426.72 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB" (at 426.72 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 14f97f63-e53d-46e4-a966-1f4dfe510ae2))(pin "2" (uuid 26bf203a-9848-480c-af4f-dae8ffcfacb2))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW43") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 439.42 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6ce677ea-06c5-4fa2-9027-210acae7850f)
+      (property "Reference" "D43" (at 439.42 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 439.42 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 439.42 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f0517d71-5bd8-4e18-b757-b52dd7554fcf))(pin "2" (uuid 09b8eaab-3ed7-426c-8ee6-d69f9b7243d4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D43") (unit 1)))))
+     (wire (pts (xy 421.64 99.06) (xy 421.64 104.14)) (stroke (width 0) (type default)) (uuid 257fc506-962b-4c12-b200-99303a50efca)) (label "COL13" (at 421.64 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c98f89c9-f654-4e54-9d35-a9b0b5e110d8)) (wire (pts (xy 431.8 99.06) (xy 435.61 99.06)) (stroke (width 0) (type default)) (uuid 2910e494-c65e-4136-bd82-dfcd86b0bb62)) (label "KEY43" (at 431.8 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1f7249c2-9612-4007-8d86-c9bca2859aa6)) (wire (pts (xy 443.23 99.06) (xy 443.23 104.14)) (stroke (width 0) (type default)) (uuid 3de63990-841a-4e62-9376-1a9ccc65a004)) (label "ROW2" (at 443.23 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2565cc2a-bd19-431e-8292-d05148c18985)) 
+    (symbol (lib_id "Switch:SW_Push") (at 487.68 99.06 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 18686764-bfe8-441d-b717-78719e1a2c79)
+      (property "Reference" "SW44" (at 487.68 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "PgDn" (at 487.68 101.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 487.68 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 8716d257-4f99-478c-a7bb-9376b19b3d59))(pin "2" (uuid 9fbc4a06-004c-4cb4-9328-c2fa1d15d8c1))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW44") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 500.38 99.06 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b06ca0ea-82b2-47b5-83a4-10903602f567)
+      (property "Reference" "D44" (at 500.38 96.26 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 500.38 101.86 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 500.38 99.06 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 0343df68-84a3-4e57-bf6f-043650918fab))(pin "2" (uuid d091b0b6-0510-4577-837c-5a7840a325b3))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D44") (unit 1)))))
+     (wire (pts (xy 482.6 99.06) (xy 482.6 104.14)) (stroke (width 0) (type default)) (uuid ae656fe0-5cb0-4921-bfe3-53ecac12fa55)) (label "COL15" (at 482.6 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7dc0a94b-4cac-46d7-8e91-f41b82506bd1)) (wire (pts (xy 492.76 99.06) (xy 496.57 99.06)) (stroke (width 0) (type default)) (uuid b283dddf-a0da-4dd0-b5c2-05ae946960a6)) (label "KEY44" (at 492.76 99.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f699a556-269d-41b0-b079-5007821f1bf5)) (wire (pts (xy 504.19 99.06) (xy 504.19 104.14)) (stroke (width 0) (type default)) (uuid b9b51ba4-8057-4e67-9e3f-7d2ee9105abe)) (label "ROW2" (at 504.19 104.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8d37fd1e-f8a1-4c6a-9359-634a009926ac)) 
+    (symbol (lib_id "Switch:SW_Push") (at 60.96 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3ddaaee1-4e82-433c-870b-727c1b0d7584)
+      (property "Reference" "SW45" (at 60.96 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "LShift" (at 60.96 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB" (at 60.96 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b9a0fd4f-4a3f-4d3e-9106-0c4598beecdb))(pin "2" (uuid e251f770-a8bf-48bb-88b7-f1daa9f32009))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW45") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 73.66 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 788b0543-4472-4d1e-bc8a-e7353c21df25)
+      (property "Reference" "D45" (at 73.66 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 73.66 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 73.66 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7a92c1bc-66fe-4737-9b0d-e79d1da833e4))(pin "2" (uuid 88f95cf4-00a6-4e1b-ac8c-15a9d3042749))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D45") (unit 1)))))
+     (wire (pts (xy 55.88 124.46) (xy 55.88 129.54)) (stroke (width 0) (type default)) (uuid a8a5de6f-7f1c-4f5b-b48b-58a36e2f4238)) (label "COL1" (at 55.88 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 27e2e314-ce4f-45de-84af-421d14be5113)) (wire (pts (xy 66.04 124.46) (xy 69.85 124.46)) (stroke (width 0) (type default)) (uuid 44c88567-b25f-47a4-a0d7-10fe2fff106f)) (label "KEY45" (at 66.04 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid dbc2d6ed-bfa6-4953-a3fb-f67d5618d7dc)) (wire (pts (xy 77.47 124.46) (xy 77.47 129.54)) (stroke (width 0) (type default)) (uuid 99748b60-b8dc-47c3-a8b2-d875ef85f714)) (label "ROW3" (at 77.47 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 91188c7a-d959-45d1-988a-a36c64b616a7)) 
+    (symbol (lib_id "Switch:SW_Push") (at 91.44 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1193a209-c303-4841-8bff-935e1b1b4000)
+      (property "Reference" "SW46" (at 91.44 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Z" (at 91.44 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 91.44 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 28c3a6c8-70fc-4916-af5c-b2cdd4c95b61))(pin "2" (uuid 6191d365-1ca6-4e54-a452-684f58f598b1))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW46") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 104.14 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid eb5237c5-713b-46b9-ae5f-9315dbed52a5)
+      (property "Reference" "D46" (at 104.14 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 104.14 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 104.14 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 0f44d8b1-fb6f-4fa1-bf52-3baa41f0d541))(pin "2" (uuid 3fe20808-b8c2-4094-9b5f-0d86cbd5b37f))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D46") (unit 1)))))
+     (wire (pts (xy 86.36 124.46) (xy 86.36 129.54)) (stroke (width 0) (type default)) (uuid 4cff7c02-8e10-4c19-a684-975f54468571)) (label "COL2" (at 86.36 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 676178ca-c918-4502-8011-1f1ff12ea09c)) (wire (pts (xy 96.52 124.46) (xy 100.33 124.46)) (stroke (width 0) (type default)) (uuid 3248bb66-a820-4e29-a0cc-e9ce4ee6f0f9)) (label "KEY46" (at 96.52 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 39919413-b2e1-4ab8-a220-8f9b8051e83a)) (wire (pts (xy 107.95 124.46) (xy 107.95 129.54)) (stroke (width 0) (type default)) (uuid 5a3b00d7-427f-4ed8-bfe4-c7f254385932)) (label "ROW3" (at 107.95 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1470931b-7d0f-4ac1-937f-2326f6bb7222)) 
+    (symbol (lib_id "Switch:SW_Push") (at 121.92 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3f0d30ae-f92e-46cd-927d-758254210c80)
+      (property "Reference" "SW47" (at 121.92 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "X" (at 121.92 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 121.92 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 314f48a7-59c2-4a76-8227-2e72349576f9))(pin "2" (uuid 042c5385-7d35-45d6-8ef9-703953ed78a0))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW47") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 134.62 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d1ff3e48-69ab-4b84-b6df-49b4622e10cf)
+      (property "Reference" "D47" (at 134.62 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 134.62 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 134.62 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 140da946-5c47-4e12-8422-6b71430b6307))(pin "2" (uuid 5632b449-694b-44da-924b-d4318155c4b3))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D47") (unit 1)))))
+     (wire (pts (xy 116.84 124.46) (xy 116.84 129.54)) (stroke (width 0) (type default)) (uuid 05f82170-d63f-4eda-8621-5bafd2d60d3c)) (label "COL3" (at 116.84 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b47f9664-6ef9-490a-aabf-5c71c4b8d1d2)) (wire (pts (xy 127 124.46) (xy 130.81 124.46)) (stroke (width 0) (type default)) (uuid fe46b280-9839-405b-a933-c15c0f5227b9)) (label "KEY47" (at 127 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 78b6def8-0905-4360-a2a8-ba1adc02a64a)) (wire (pts (xy 138.43 124.46) (xy 138.43 129.54)) (stroke (width 0) (type default)) (uuid e9e32532-f814-47e5-8a24-9f806128f5ff)) (label "ROW3" (at 138.43 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid de3bbb5f-c875-4e27-b2c8-31613d5a8b5a)) 
+    (symbol (lib_id "Switch:SW_Push") (at 152.4 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 3d85b219-1512-464b-bb7c-97b0d83d2f58)
+      (property "Reference" "SW48" (at 152.4 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "C" (at 152.4 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 152.4 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 50c1e158-2f55-4ad8-ad49-b7adda35fa95))(pin "2" (uuid 50d26517-26ad-4a26-971f-02d94eb8dfac))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW48") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 165.1 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 63e45375-0ec1-4302-a300-46a7c819d115)
+      (property "Reference" "D48" (at 165.1 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 165.1 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 165.1 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 0987ebac-a779-4933-bd0d-b9d967427ea0))(pin "2" (uuid d0648570-f801-423b-b366-4057a15b05d5))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D48") (unit 1)))))
+     (wire (pts (xy 147.32 124.46) (xy 147.32 129.54)) (stroke (width 0) (type default)) (uuid 78dbe7fe-7a2f-4190-a062-012abba6289c)) (label "COL4" (at 147.32 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c9daaf95-7ded-4880-b28b-28d12be798bf)) (wire (pts (xy 157.48 124.46) (xy 161.29 124.46)) (stroke (width 0) (type default)) (uuid 4aa7d4a7-d198-4b49-9960-6a3e60155179)) (label "KEY48" (at 157.48 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1fef2b3e-7ff8-4e45-a815-f3e28095459c)) (wire (pts (xy 168.91 124.46) (xy 168.91 129.54)) (stroke (width 0) (type default)) (uuid 9ed00439-6fef-40ff-bba8-3b30a9b63eb8)) (label "ROW3" (at 168.91 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4aad333c-cd06-47da-90d3-6123701f50b2)) 
+    (symbol (lib_id "Switch:SW_Push") (at 182.88 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid c22630e8-b639-422d-b41d-0e3bf0cae73f)
+      (property "Reference" "SW49" (at 182.88 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "V" (at 182.88 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 182.88 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 68e4407b-8b89-4ecc-bc58-00bbb3eb586a))(pin "2" (uuid 2f933485-8154-450b-bd47-dbe55add9933))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW49") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 195.58 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d7ef0130-9aa2-4d4e-959b-1cd9517de2b5)
+      (property "Reference" "D49" (at 195.58 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 195.58 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 195.58 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e212bf01-32a7-44f8-9ed5-a93755dd6017))(pin "2" (uuid 023d754f-cc4e-43a2-ab8f-5412730ae890))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D49") (unit 1)))))
+     (wire (pts (xy 177.8 124.46) (xy 177.8 129.54)) (stroke (width 0) (type default)) (uuid ffd6f290-6a1a-4a09-b3f3-3508b69f427a)) (label "COL5" (at 177.8 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4a05a8cd-c278-4bc7-8d51-49233a4f7721)) (wire (pts (xy 187.96 124.46) (xy 191.77 124.46)) (stroke (width 0) (type default)) (uuid 471451c5-8219-4bb2-b9cf-010a9495f853)) (label "KEY49" (at 187.96 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9d7aad38-2881-412c-8b27-3075f47caba6)) (wire (pts (xy 199.39 124.46) (xy 199.39 129.54)) (stroke (width 0) (type default)) (uuid 6148f6a3-f86e-4278-8a5b-7c6bd899fcf2)) (label "ROW3" (at 199.39 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ce020e17-1afa-44bf-84fb-66f72b1e256a)) 
+    (symbol (lib_id "Switch:SW_Push") (at 213.36 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 910530b2-391b-431a-8641-05af1456b14c)
+      (property "Reference" "SW50" (at 213.36 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "B" (at 213.36 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 213.36 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b87534d4-2f4e-44f7-a064-eb56641196c6))(pin "2" (uuid ef04788d-a66c-44c4-b96c-732142052054))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW50") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 226.06 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 81f5d444-44ee-4b4e-9d6d-158f15643379)
+      (property "Reference" "D50" (at 226.06 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 226.06 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 226.06 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f9868baa-b916-4313-ae03-a14c529fd84a))(pin "2" (uuid 78db0e9c-d873-4bc8-a74f-d1ca1199ee7c))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D50") (unit 1)))))
+     (wire (pts (xy 208.28 124.46) (xy 208.28 129.54)) (stroke (width 0) (type default)) (uuid b6477137-5e12-427b-b83f-1946509b0fc7)) (label "COL6" (at 208.28 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 867436bc-7f2a-4536-97af-1e372256d81b)) (wire (pts (xy 218.44 124.46) (xy 222.25 124.46)) (stroke (width 0) (type default)) (uuid 8b247f66-de7d-4f7e-9710-d2f6b96f6234)) (label "KEY50" (at 218.44 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 86568535-57c5-4ac7-8c08-b93184c7cf4e)) (wire (pts (xy 229.87 124.46) (xy 229.87 129.54)) (stroke (width 0) (type default)) (uuid 4b8b4875-6dca-4dda-8c8d-011ba0b752ff)) (label "ROW3" (at 229.87 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f29de78f-1ea6-4ea7-a91e-ef5ebbab97b7)) 
+    (symbol (lib_id "Switch:SW_Push") (at 243.84 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ef1c194f-aff2-4140-923e-42cf9c74288f)
+      (property "Reference" "SW51" (at 243.84 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "N" (at 243.84 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 243.84 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 55b367de-5fd8-47f8-9639-5a3f7eb3ee6b))(pin "2" (uuid 8fdb65ae-5718-47ac-93e5-644eac438aa9))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW51") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 256.54 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6ee66c34-bf5f-4cea-9341-ca6457f2553f)
+      (property "Reference" "D51" (at 256.54 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 256.54 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 256.54 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 35532e86-6f32-4ba5-bad9-76149f59286d))(pin "2" (uuid adc62297-84c4-49ae-8a4d-9e020a92757b))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D51") (unit 1)))))
+     (wire (pts (xy 238.76 124.46) (xy 238.76 129.54)) (stroke (width 0) (type default)) (uuid 58322f1c-107c-4b1b-a1df-8062da5b9cc0)) (label "COL7" (at 238.76 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 499cf640-82f9-4ce5-9b15-a4ec0993dfee)) (wire (pts (xy 248.92 124.46) (xy 252.73 124.46)) (stroke (width 0) (type default)) (uuid a2a3d71b-0633-4a8a-ace4-3ef48690e173)) (label "KEY51" (at 248.92 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9c9ddf5b-23b2-45c5-b527-c42cbb750749)) (wire (pts (xy 260.35 124.46) (xy 260.35 129.54)) (stroke (width 0) (type default)) (uuid aeeabbe1-1195-4966-a35e-bd2ad841e647)) (label "ROW3" (at 260.35 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid bb402062-896d-4980-adb4-307d5b712485)) 
+    (symbol (lib_id "Switch:SW_Push") (at 274.32 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid b2de2f93-d166-4b15-9c20-c0e9ff3698c6)
+      (property "Reference" "SW52" (at 274.32 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M" (at 274.32 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 274.32 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 3dfb90d5-582e-4166-a3b2-6020147240c6))(pin "2" (uuid 42dad04c-374c-4c30-92a8-ead888dd4675))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW52") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 287.02 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 54e95d3b-1e37-4f48-98ea-0b99c82e1f56)
+      (property "Reference" "D52" (at 287.02 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 287.02 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 287.02 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid f8633b14-0dc8-4f74-8468-8dad0a62131f))(pin "2" (uuid 46d43e78-c260-4dc2-bd12-80bdc5092c16))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D52") (unit 1)))))
+     (wire (pts (xy 269.24 124.46) (xy 269.24 129.54)) (stroke (width 0) (type default)) (uuid fcbaf758-c5d7-4d6b-8c03-8308f35ceca8)) (label "COL8" (at 269.24 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b303511a-2825-4906-87e0-36233ec19e6e)) (wire (pts (xy 279.4 124.46) (xy 283.21 124.46)) (stroke (width 0) (type default)) (uuid 6fd46c77-2de2-463e-ac8c-19632e36e265)) (label "KEY52" (at 279.4 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 6249a939-cb20-42a2-bc9f-c17a6c157903)) (wire (pts (xy 290.83 124.46) (xy 290.83 129.54)) (stroke (width 0) (type default)) (uuid d73fea8c-8125-4910-9ea7-08776d02d18f)) (label "ROW3" (at 290.83 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c355a8e0-b374-4409-88fa-31c46ad4337f)) 
+    (symbol (lib_id "Switch:SW_Push") (at 304.8 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 305df161-c949-41cb-addd-23f04793f633)
+      (property "Reference" "SW53" (at 304.8 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "," (at 304.8 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 304.8 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 90dc3d2f-2de7-4a07-abea-ed8d6ee5bd4e))(pin "2" (uuid 96922f79-6864-465d-92e5-47c84d268f67))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW53") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 317.5 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid e2173194-a226-44f5-9603-dc99df9ffe5a)
+      (property "Reference" "D53" (at 317.5 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 317.5 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 317.5 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d41fcfd5-a70b-411e-907e-1e9fe7690d63))(pin "2" (uuid c5c00d84-2581-4df7-b409-06238ca56306))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D53") (unit 1)))))
+     (wire (pts (xy 299.72 124.46) (xy 299.72 129.54)) (stroke (width 0) (type default)) (uuid 4bcd2825-22a4-4d90-9438-16d35372a920)) (label "COL9" (at 299.72 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 6d323084-6bbd-47b0-9f87-6130e16cbd55)) (wire (pts (xy 309.88 124.46) (xy 313.69 124.46)) (stroke (width 0) (type default)) (uuid 22fab955-d2e6-483d-a51b-36d6717a0310)) (label "KEY53" (at 309.88 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 14183e45-457e-4edf-8ace-05016fbad5de)) (wire (pts (xy 321.31 124.46) (xy 321.31 129.54)) (stroke (width 0) (type default)) (uuid 8218881f-b738-41d2-a40e-9a49716a6549)) (label "ROW3" (at 321.31 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4221b7bc-4bc0-4317-95e8-e58f7b5ca591)) 
+    (symbol (lib_id "Switch:SW_Push") (at 335.28 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid d57bb745-f54a-400d-b017-eeb05a2e3b3e)
+      (property "Reference" "SW54" (at 335.28 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "." (at 335.28 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 335.28 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid ad5aa097-6c7b-4248-851f-f5422d832126))(pin "2" (uuid fc4f132c-1de3-41a0-94d3-ed8633f6c7d0))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW54") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 347.98 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f5f7f598-2b00-4fbf-bf45-dc7222e56e23)
+      (property "Reference" "D54" (at 347.98 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 347.98 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 347.98 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 66d1e66e-5794-41e9-a932-1eda8658866b))(pin "2" (uuid ab794989-0f86-4196-bdc8-4f7fb583eb81))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D54") (unit 1)))))
+     (wire (pts (xy 330.2 124.46) (xy 330.2 129.54)) (stroke (width 0) (type default)) (uuid 47f3d65a-b06e-458d-9ea1-6a9e8f1e5b1b)) (label "COL10" (at 330.2 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid aa209abc-50a8-4503-8760-1d8fc19f1b67)) (wire (pts (xy 340.36 124.46) (xy 344.17 124.46)) (stroke (width 0) (type default)) (uuid c311e5cf-8a58-49d8-a76f-c441dbd61bd2)) (label "KEY54" (at 340.36 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid cec61bb2-2f0d-46f1-a4f5-b2fecd293e55)) (wire (pts (xy 351.79 124.46) (xy 351.79 129.54)) (stroke (width 0) (type default)) (uuid 8edca5dc-265e-485f-9e60-09d2b6bcb168)) (label "ROW3" (at 351.79 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 31bcf6dd-a260-44fc-ba45-0df23df0155d)) 
+    (symbol (lib_id "Switch:SW_Push") (at 365.76 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid c848ec2c-344d-471e-8f79-99538bbd5af7)
+      (property "Reference" "SW55" (at 365.76 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "/" (at 365.76 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 365.76 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 40ce2f84-5227-475b-82c8-6f05bc29e8b1))(pin "2" (uuid 870597ee-0622-4e64-ad87-d90717476025))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW55") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 378.46 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid a7860f90-f4ca-438a-ade4-27025d548790)
+      (property "Reference" "D55" (at 378.46 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 378.46 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 378.46 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 20f8c806-710b-49ff-a4b6-417acc759f01))(pin "2" (uuid c252b404-5ac7-4d17-bd26-a5602307efae))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D55") (unit 1)))))
+     (wire (pts (xy 360.68 124.46) (xy 360.68 129.54)) (stroke (width 0) (type default)) (uuid f70d20fa-e89b-4786-b260-65b98ff841a5)) (label "COL11" (at 360.68 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 155c1ebb-03dc-4192-b327-5fca45645045)) (wire (pts (xy 370.84 124.46) (xy 374.65 124.46)) (stroke (width 0) (type default)) (uuid 7834673a-2897-4748-bd38-e395106d4a75)) (label "KEY55" (at 370.84 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 071ddfd1-ec45-4d8b-8c3c-78246d469ba2)) (wire (pts (xy 382.27 124.46) (xy 382.27 129.54)) (stroke (width 0) (type default)) (uuid 971ea2d6-bfd2-42c9-a01d-689991e3a856)) (label "ROW3" (at 382.27 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 29c34b85-866b-49cc-9e38-5cb5a609fa03)) 
+    (symbol (lib_id "Switch:SW_Push") (at 426.72 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 8c878c07-73a6-4a2f-b663-8d3b87ff1f21)
+      (property "Reference" "SW56" (at 426.72 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "RShift" (at 426.72 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 426.72 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 9f4f7ada-6986-4f2f-8783-688db65be37e))(pin "2" (uuid 6d65fdbd-bd9f-4bf8-be39-4da316460765))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW56") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 439.42 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 89ad642d-2f4b-4dd0-8ce8-48e4df5137bc)
+      (property "Reference" "D56" (at 439.42 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 439.42 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 439.42 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d7a72514-f958-4df1-bc35-5944108afe43))(pin "2" (uuid 5881d799-39af-4359-bd2a-0077f5f66609))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D56") (unit 1)))))
+     (wire (pts (xy 421.64 124.46) (xy 421.64 129.54)) (stroke (width 0) (type default)) (uuid 8ea87435-1683-4a07-acba-4e8e594b11f1)) (label "COL13" (at 421.64 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid eecefea2-6543-4d7c-befb-7a158d0ddd24)) (wire (pts (xy 431.8 124.46) (xy 435.61 124.46)) (stroke (width 0) (type default)) (uuid 82bb0a54-1764-4fba-a7f2-86b9b72f1fab)) (label "KEY56" (at 431.8 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 6e053c25-1e61-4715-bc82-caf2bb20c90c)) (wire (pts (xy 443.23 124.46) (xy 443.23 129.54)) (stroke (width 0) (type default)) (uuid 7c405a6a-508f-4381-9ce9-c600ef509f0d)) (label "ROW3" (at 443.23 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid a1784cc0-f40b-4d30-91e7-eee59828af07)) 
+    (symbol (lib_id "Switch:SW_Push") (at 457.2 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 750d99a3-50cd-48c9-a62f-5e6f79de9aa3)
+      (property "Reference" "SW57" (at 457.2 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Up" (at 457.2 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 457.2 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 236b36dc-6f0e-4126-9916-20d4f697cf98))(pin "2" (uuid 3a62e133-53d4-4a61-8016-b011e2e40708))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW57") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 469.9 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid c06e923a-63f5-422b-a897-0fa4d75ecff9)
+      (property "Reference" "D57" (at 469.9 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 469.9 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 469.9 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7ebb6481-d381-4392-b24a-c7514e8917c1))(pin "2" (uuid 07d3ba3b-6d0c-46a8-afe8-fc6865cec4de))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D57") (unit 1)))))
+     (wire (pts (xy 452.12 124.46) (xy 452.12 129.54)) (stroke (width 0) (type default)) (uuid 8a7b26a4-8725-472b-afba-202964ce5d8e)) (label "COL14" (at 452.12 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 93913a26-1527-47b4-a87d-c7dc0cf16e68)) (wire (pts (xy 462.28 124.46) (xy 466.09 124.46)) (stroke (width 0) (type default)) (uuid f9d66749-bc57-4a7f-b631-b9699aea601c)) (label "KEY57" (at 462.28 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3e128875-140e-4538-bbbd-79898e844a18)) (wire (pts (xy 473.71 124.46) (xy 473.71 129.54)) (stroke (width 0) (type default)) (uuid a788870e-0634-4cda-b41d-d9f8e97f6669)) (label "ROW3" (at 473.71 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 01771523-1fab-4751-a386-60a97564a763)) 
+    (symbol (lib_id "Switch:SW_Push") (at 487.68 124.46 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 5d8facdd-a45f-459a-9e2b-16d19c67744f)
+      (property "Reference" "SW58" (at 487.68 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "End" (at 487.68 127.26 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 487.68 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b7cae8cb-d718-4821-8d69-4ea9fc8a3986))(pin "2" (uuid a4b16278-e198-4e63-9835-ca5e3062c369))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW58") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 500.38 124.46 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 14bf31d1-320b-4c48-a2aa-f2db686d4717)
+      (property "Reference" "D58" (at 500.38 121.66 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 500.38 127.26 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 500.38 124.46 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 2a03a4b0-5208-4292-be1d-5eff7ebe2911))(pin "2" (uuid 1d8a91bc-e1ec-4816-852c-6306954765f9))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D58") (unit 1)))))
+     (wire (pts (xy 482.6 124.46) (xy 482.6 129.54)) (stroke (width 0) (type default)) (uuid 38ae552d-eae2-473c-81f1-2548f38f8605)) (label "COL15" (at 482.6 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid bf73574d-5eb8-481e-9e2d-31dd62face31)) (wire (pts (xy 492.76 124.46) (xy 496.57 124.46)) (stroke (width 0) (type default)) (uuid 3d77b76a-508a-42e8-a4d8-2e648e364ad1)) (label "KEY58" (at 492.76 124.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b95f9916-4832-43ea-9612-5283816e3e90)) (wire (pts (xy 504.19 124.46) (xy 504.19 129.54)) (stroke (width 0) (type default)) (uuid 23ef3dce-4c4a-4c63-9a20-a096df9f3538)) (label "ROW3" (at 504.19 129.54 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8648d07f-01f6-4574-851f-9ad2def7544b)) 
+    (symbol (lib_id "Switch:SW_Push") (at 30.48 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1995af9d-7672-4400-9dd7-fa37bc0ec35b)
+      (property "Reference" "SW59" (at 30.48 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "LCtrl" (at 30.48 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 30.48 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid b2a3dc82-58a4-4f12-9dda-eef47720f1f3))(pin "2" (uuid b64b360d-79ab-4175-8842-fdb6c07a7aad))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW59") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 43.18 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid f86b3c84-39f2-4ddf-8a1d-33279f8a974c)
+      (property "Reference" "D59" (at 43.18 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 43.18 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 43.18 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid c5e315d5-befb-450a-969b-fad6bea3a21f))(pin "2" (uuid 0018807d-9686-4ba9-aa75-41567e2a5508))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D59") (unit 1)))))
+     (wire (pts (xy 25.4 149.86) (xy 25.4 154.94)) (stroke (width 0) (type default)) (uuid e10154e9-0ab6-4483-8f78-7c51454f8d11)) (label "COL0" (at 25.4 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 74b1323a-18e4-44dc-a848-1c2ba41e48c7)) (wire (pts (xy 35.56 149.86) (xy 39.37 149.86)) (stroke (width 0) (type default)) (uuid ca320801-349d-4e4e-810c-a7432fc896fc)) (label "KEY59" (at 35.56 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 638c97c1-6158-4b0e-a32f-1fa2495cec25)) (wire (pts (xy 46.99 149.86) (xy 46.99 154.94)) (stroke (width 0) (type default)) (uuid 8e6f3629-5f2c-47e4-9c5d-cfaeda59e3c3)) (label "ROW4" (at 46.99 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 25119d37-8cd9-4daa-9cdf-b19f830660db)) 
+    (symbol (lib_id "Switch:SW_Push") (at 60.96 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 4ad2f424-b78f-4faf-80eb-48194cc142d1)
+      (property "Reference" "SW60" (at 60.96 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Win" (at 60.96 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 60.96 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 9d0f2cc7-9c2e-43ce-a751-a75d9bab044a))(pin "2" (uuid b47cde4b-5209-49af-b4ed-5d1e27b83e12))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW60") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 73.66 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid fda7724b-d48a-4c1d-8ab7-af9cf6d21ac2)
+      (property "Reference" "D60" (at 73.66 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 73.66 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 73.66 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 6dd76044-f384-4505-9a2f-89cb05a3c1e2))(pin "2" (uuid 55a39c57-d698-4b57-87b7-44b70a149648))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D60") (unit 1)))))
+     (wire (pts (xy 55.88 149.86) (xy 55.88 154.94)) (stroke (width 0) (type default)) (uuid 5b03b08c-badd-4076-8c0e-c09915dc25b1)) (label "COL1" (at 55.88 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 8f31edfe-219d-450d-b9cb-5d6eab30b6ec)) (wire (pts (xy 66.04 149.86) (xy 69.85 149.86)) (stroke (width 0) (type default)) (uuid e23722d5-10f4-4eed-b679-3aa97e3de7c8)) (label "KEY60" (at 66.04 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c5a528ef-29cc-4fd9-b8f0-212fd7105eae)) (wire (pts (xy 77.47 149.86) (xy 77.47 154.94)) (stroke (width 0) (type default)) (uuid 0dd429e4-be28-4617-9adb-c635a9025ee2)) (label "ROW4" (at 77.47 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid cc9cbb0f-e68a-4448-8193-4e9835d08584)) 
+    (symbol (lib_id "Switch:SW_Push") (at 121.92 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1c0304c1-53af-4551-8949-5676ff09a2d9)
+      (property "Reference" "SW61" (at 121.92 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "LAlt" (at 121.92 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 121.92 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 7bb0e4a3-893b-44cd-b2f8-e87c54070c24))(pin "2" (uuid f193680f-3de1-415c-8ee5-4543e6ab1c5c))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW61") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 134.62 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 481be0a6-9a75-4fbe-9581-9d493b3e7bc9)
+      (property "Reference" "D61" (at 134.62 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 134.62 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 134.62 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 5933840f-9c02-4b8f-9663-b83581900839))(pin "2" (uuid e71b3293-23ea-428b-b615-1e8c9b74d95c))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D61") (unit 1)))))
+     (wire (pts (xy 116.84 149.86) (xy 116.84 154.94)) (stroke (width 0) (type default)) (uuid 628c5d60-8313-498a-a810-6c26efc1cdc3)) (label "COL3" (at 116.84 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid ce7ef7a5-335e-40f0-8c90-72b61abf18bd)) (wire (pts (xy 127 149.86) (xy 130.81 149.86)) (stroke (width 0) (type default)) (uuid 96502587-f366-4026-8679-21c32d118d1b)) (label "KEY61" (at 127 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3df74a4f-ec47-4a37-97c8-2e47127f0f3d)) (wire (pts (xy 138.43 149.86) (xy 138.43 154.94)) (stroke (width 0) (type default)) (uuid d8ab52ed-ef68-41ef-a567-a5e2fc03885d)) (label "ROW4" (at 138.43 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 71746fd1-a941-4563-827c-81be1ab3da3f)) 
+    (symbol (lib_id "Switch:SW_Push") (at 213.36 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid a2361022-933c-44ab-84c0-80b808eff6df)
+      (property "Reference" "SW62" (at 213.36 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Space" (at 213.36 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB" (at 213.36 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 68f271d8-5cc8-4f5c-a8f9-b31c5d8b4252))(pin "2" (uuid 51d64df7-8dc8-4e66-b06d-f173986c4b23))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW62") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 226.06 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 5fd871f6-8171-40b8-99ec-fac44bbacb97)
+      (property "Reference" "D62" (at 226.06 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 226.06 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 226.06 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a6ac86e3-4895-45d7-b845-dd9c32df73df))(pin "2" (uuid 3a38b1bc-f667-4dc6-b1e0-a0e133db72db))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D62") (unit 1)))))
+     (wire (pts (xy 208.28 149.86) (xy 208.28 154.94)) (stroke (width 0) (type default)) (uuid c6158a58-4079-4b3d-ae2d-5e7af2531f8f)) (label "COL6" (at 208.28 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 784790db-a532-42f7-aba3-b022d935845a)) (wire (pts (xy 218.44 149.86) (xy 222.25 149.86)) (stroke (width 0) (type default)) (uuid 7994dd23-f66e-4087-9a26-f59a356a06f5)) (label "KEY62" (at 218.44 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9a500800-cc13-4f95-9bf1-a1eb5c5c02c5)) (wire (pts (xy 229.87 149.86) (xy 229.87 154.94)) (stroke (width 0) (type default)) (uuid 21ac269a-060a-48f4-ad32-f76d49c1bc1c)) (label "ROW4" (at 229.87 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 44ac3561-c447-45b2-9a59-08028dfc03c5)) 
+    (symbol (lib_id "Switch:SW_Push") (at 335.28 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 231d9c49-5c90-47ac-9e9d-e315e8e58320)
+      (property "Reference" "SW63" (at 335.28 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "RAlt" (at 335.28 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 335.28 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid d79ffbe8-bcb3-4cdc-ba03-cb3fe85f4126))(pin "2" (uuid 7f50fe7a-f813-45d3-98de-2abec28defa9))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW63") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 347.98 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid a848ce87-191a-431a-b95a-a96fd93c9138)
+      (property "Reference" "D63" (at 347.98 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 347.98 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 347.98 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid a638693c-9bca-4acb-aa3b-4774d557c6f0))(pin "2" (uuid a4570d6e-5bd4-4bb9-bd64-4bb549dca3c8))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D63") (unit 1)))))
+     (wire (pts (xy 330.2 149.86) (xy 330.2 154.94)) (stroke (width 0) (type default)) (uuid 6b08fe55-f35b-44e8-b6a1-d92a1a0768cf)) (label "COL10" (at 330.2 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid a0af4f6c-d6e4-4b50-9835-1ce1fca275ae)) (wire (pts (xy 340.36 149.86) (xy 344.17 149.86)) (stroke (width 0) (type default)) (uuid ae2726ec-5770-48be-8ef0-dd068869551f)) (label "KEY63" (at 340.36 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3cfe3f59-6685-4610-83fe-8a5b22e5b5de)) (wire (pts (xy 351.79 149.86) (xy 351.79 154.94)) (stroke (width 0) (type default)) (uuid 2094cfef-847d-4222-bdf6-7ee6c85b0887)) (label "ROW4" (at 351.79 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 650ba912-7ec9-4fb2-a42b-7d008e33c7ee)) 
+    (symbol (lib_id "Switch:SW_Push") (at 365.76 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 463261c8-942f-4b14-8628-3b0139ef0920)
+      (property "Reference" "SW64" (at 365.76 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Fn" (at 365.76 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 365.76 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 1c3a3051-f768-41e4-ad08-661296892a25))(pin "2" (uuid 03b68442-0cc6-46ca-be5e-ccfecaf71e04))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW64") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 378.46 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ea83e363-98b2-49b9-baaf-6f5f1d9bbc49)
+      (property "Reference" "D64" (at 378.46 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 378.46 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 378.46 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 81cbf90e-946e-4842-81b9-45e9b3daeab5))(pin "2" (uuid c845494f-bf8c-4d1a-9224-eebbf00788d4))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D64") (unit 1)))))
+     (wire (pts (xy 360.68 149.86) (xy 360.68 154.94)) (stroke (width 0) (type default)) (uuid 70fa1eb0-12c1-494c-a596-c15d19f1f2c3)) (label "COL11" (at 360.68 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 2d3d4d30-00f0-4e0c-bb5a-15682d7b5932)) (wire (pts (xy 370.84 149.86) (xy 374.65 149.86)) (stroke (width 0) (type default)) (uuid f27245bb-3316-4454-a31b-544d07b3d0c2)) (label "KEY64" (at 370.84 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 16df118d-41fc-42f4-8130-5e0476da4a48)) (wire (pts (xy 382.27 149.86) (xy 382.27 154.94)) (stroke (width 0) (type default)) (uuid 3cbf55d2-6ec3-4cda-b1f2-3ce1a02e5004)) (label "ROW4" (at 382.27 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 57dba426-3d2e-41db-b5ca-a421f0998d90)) 
+    (symbol (lib_id "Switch:SW_Push") (at 426.72 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid efa8289c-2075-4f1b-b8c6-3673ac1aca8d)
+      (property "Reference" "SW65" (at 426.72 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Left" (at 426.72 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 426.72 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 663a21d4-ac9e-46ae-94eb-c8004b577ea9))(pin "2" (uuid 2676c655-4196-4c86-b75d-0f082d66770b))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW65") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 439.42 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 482004a7-1e9d-49b6-b032-fea160ee6058)
+      (property "Reference" "D65" (at 439.42 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 439.42 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 439.42 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 148c3774-4d4d-4be2-a881-bdfc35a2c601))(pin "2" (uuid 5e66275d-a33b-4d9e-a146-2a550d8fce1d))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D65") (unit 1)))))
+     (wire (pts (xy 421.64 149.86) (xy 421.64 154.94)) (stroke (width 0) (type default)) (uuid d40f5a8a-d30a-44dd-ba48-c9670d400114)) (label "COL13" (at 421.64 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9e86b7a9-95f2-4bd8-9e0a-25b850099b12)) (wire (pts (xy 431.8 149.86) (xy 435.61 149.86)) (stroke (width 0) (type default)) (uuid 4fde9bc3-f8ae-4ce1-9835-f7eb26fd7bab)) (label "KEY65" (at 431.8 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 1d76d6d1-ba84-41da-9705-b5786e768526)) (wire (pts (xy 443.23 149.86) (xy 443.23 154.94)) (stroke (width 0) (type default)) (uuid 116395d0-960c-43d8-b21e-367a8d616d43)) (label "ROW4" (at 443.23 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 673d7cde-afcf-4005-9de2-08307f00fad2)) 
+    (symbol (lib_id "Switch:SW_Push") (at 457.2 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1afec699-1ffe-4c50-88b3-c5e9535f6c9e)
+      (property "Reference" "SW66" (at 457.2 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Down" (at 457.2 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 457.2 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid e8ea9c40-22d5-4076-bb89-5d79b14bc459))(pin "2" (uuid 87ffe45e-45e9-4ca2-b40b-9f1f8bdae7f2))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW66") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 469.9 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid cc3c9418-fd19-44ae-9fcf-0f2f9773397a)
+      (property "Reference" "D66" (at 469.9 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 469.9 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 469.9 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 55d5dc92-e617-4b11-b10b-3fcbd8cbbd0b))(pin "2" (uuid 884bf13a-5de7-429c-8837-538915c54e54))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D66") (unit 1)))))
+     (wire (pts (xy 452.12 149.86) (xy 452.12 154.94)) (stroke (width 0) (type default)) (uuid 24cde75e-d21d-4222-a8d4-a1a34a749598)) (label "COL14" (at 452.12 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b2c9078d-066a-4266-9b92-05f2bc7c320a)) (wire (pts (xy 462.28 149.86) (xy 466.09 149.86)) (stroke (width 0) (type default)) (uuid bf132eee-4189-429b-86a6-b4dd79b67c17)) (label "KEY66" (at 462.28 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 61f01781-a11c-4333-a645-225a9368d4bc)) (wire (pts (xy 473.71 149.86) (xy 473.71 154.94)) (stroke (width 0) (type default)) (uuid 4afb25b0-7f7b-4760-971b-a9033dc93c25)) (label "ROW4" (at 473.71 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 173d816a-7971-4b4e-abdd-640ebdbe57fa)) 
+    (symbol (lib_id "Switch:SW_Push") (at 487.68 149.86 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 04fe693f-2d3d-4dfc-8497-f123a49a3d22)
+      (property "Reference" "SW67" (at 487.68 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Right" (at 487.68 152.66 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (at 487.68 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 74bedeb8-30b3-4caa-b765-0f09c12da2f5))(pin "2" (uuid e8390b1e-a451-42b1-91aa-3c6996087847))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "SW67") (unit 1)))))
+     
+    (symbol (lib_id "Device:D") (at 500.38 149.86 180) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid e3821042-ab19-4061-98c6-fb5b3444dd73)
+      (property "Reference" "D67" (at 500.38 147.06 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "1N4148" (at 500.38 152.66 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 500.38 149.86 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 8469a272-cff3-462b-a4a4-56d3084e88b1))(pin "2" (uuid f1a39e8c-b6bb-4e9d-991c-a9d95ad22642))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "D67") (unit 1)))))
+     (wire (pts (xy 482.6 149.86) (xy 482.6 154.94)) (stroke (width 0) (type default)) (uuid d413aac9-c1b1-492f-a13a-eca7ec5f68f1)) (label "COL15" (at 482.6 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 16a81dc0-36a3-439e-a197-64c2413eae05)) (wire (pts (xy 492.76 149.86) (xy 496.57 149.86)) (stroke (width 0) (type default)) (uuid 7af4c2c2-6d1f-4405-8bdd-6191fbbe0961)) (label "KEY67" (at 492.76 149.86 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 376df2ce-2bbf-4d5f-9f21-8fada4f3d02d)) (wire (pts (xy 504.19 149.86) (xy 504.19 154.94)) (stroke (width 0) (type default)) (uuid f2963217-5dbc-4864-8304-ca712622ad2b)) (label "ROW4" (at 504.19 154.94 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f4b6065b-70d8-4984-b575-2f1e84ee0720)) 
+    (symbol (lib_id "MCU_Module:RaspberryPi_Pico") (at 76.2 210.82 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid ca9eaf59-5d25-4e56-b0c4-ddcc1c209da0)
+      (property "Reference" "U1" (at 76.2 208.02 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "Raspberry Pi Pico" (at 76.2 213.62 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "Keeb65:RaspberryPi_Pico_RightEdge_THT" (at 76.2 210.82 0) (hide yes) (effects (font (size 1.0 1.0))))
+      (pin "1" (uuid 12c1fa05-1b0d-4055-b161-1f45d0862f66))(pin "2" (uuid 2df2bc76-0ca8-4ed0-bc1b-950a9916da51))(pin "3" (uuid 35419c6f-d287-4c36-a5e0-a02932a8ce5e))(pin "4" (uuid ffd1e14f-4a62-4511-859c-17ae1fd280b1))(pin "5" (uuid 36635fa8-4e88-41a1-acdb-bbe21811f664))(pin "6" (uuid ee549e7e-a54e-4b56-8a89-eda37cbaff11))(pin "7" (uuid 81462e93-8848-428d-aa35-33ed332bf73f))(pin "8" (uuid 7d0ef18d-3801-43db-8940-47df8775948c))(pin "9" (uuid 38168d1a-3714-47f9-8afa-097da6efad87))(pin "10" (uuid ae7a0d38-248d-49b8-99a0-5e1ff15a9dc9))(pin "11" (uuid e52ea178-e0b8-4f76-85fc-f3f9d743e576))(pin "12" (uuid 8b9b742a-7301-40ab-b929-86bd4cdb375a))(pin "13" (uuid 4b3610d2-38ee-42fa-b4d9-e597b3d6ca65))(pin "14" (uuid 3958340c-4f33-4c15-aef8-e19721c0e98a))(pin "15" (uuid 088e911c-5068-441f-b212-f6535c4323d0))(pin "16" (uuid 4501e3da-b956-485b-9d51-2619fcc7c066))(pin "17" (uuid 7464bf9a-f338-4f8c-a786-a8472d952a2b))(pin "18" (uuid c81bd640-d2d0-4e7a-8ea6-fdc28dbcfd99))(pin "19" (uuid 15ea9fa4-8fd7-4518-8484-6e2727dd8024))(pin "20" (uuid 3b230876-1c86-4ba5-946c-042e0228bc6d))(pin "21" (uuid a6aa5728-f061-4649-9850-dee201c8d68d))(pin "22" (uuid 94091306-277f-4dfe-8bd6-03f2e77a0bc6))(pin "23" (uuid 5cc69a6d-0939-4292-8d82-b80ab21e51a8))(pin "24" (uuid 8ec99293-b8d8-461d-97d3-e51a0f288d98))(pin "25" (uuid a4b8d1da-e37e-441e-8b79-109437bfe02f))(pin "26" (uuid 1acc7a96-530e-4a9e-ba37-f01f5cf566df))(pin "27" (uuid 7c696d4c-6112-450d-b6a9-ea5789e957fb))(pin "28" (uuid e0a6f109-48ce-4607-9622-808ab12a2153))(pin "29" (uuid f566c590-8298-40ca-9c40-1971dea98045))(pin "30" (uuid 83e92ae2-346c-42a5-bf64-4749d1a75a0d))(pin "31" (uuid ecde6b74-433e-4ab6-8a6f-b22e9172193e))(pin "32" (uuid a9a3161b-3c78-4c8a-83e6-87d36ee5ca78))(pin "33" (uuid 9f274b6f-8d03-4874-8bb2-c827a77742aa))(pin "34" (uuid add6da61-48f1-4cd8-8d7c-068cab93400e))(pin "35" (uuid 03abe44c-437c-41ac-b00c-e69f2bfa0c4b))(pin "36" (uuid 9aba91bf-57a6-4ca0-a37d-a643eca5e330))(pin "37" (uuid 1ddedc15-3a41-4da6-b404-dce165b1a303))(pin "38" (uuid af13e964-83c4-4c6e-af88-7a7728cddd93))(pin "39" (uuid ddd4cafc-febf-4422-9c20-49b3b8b95dc3))(pin "40" (uuid 492325ba-f8c0-489a-968a-e4b4226d4082))
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "U1") (unit 1)))))
+     (wire (pts (xy 53.34 195.58) (xy 45.72 195.58)) (stroke (width 0) (type default)) (uuid b00c072b-606e-4ebd-a3a5-26e6e99d79c3)) (label "COL0" (at 45.72 195.58 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid df14258f-e13f-4e1e-856f-1c50ffec0be2)) (wire (pts (xy 53.34 198.12) (xy 45.72 198.12)) (stroke (width 0) (type default)) (uuid d5b74da6-bb1c-4ecd-9093-177e169f0c2a)) (label "COL1" (at 45.72 198.12 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b0e062e5-09cb-4847-99e3-7a4ee3ba054c)) (wire (pts (xy 76.2 246.38) (xy 76.2 251.46)) (stroke (width 0) (type default)) (uuid b05e6f5d-fa32-40d2-a0c3-afc0a1207c19)) (label "GND" (at 76.2 251.46 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 41c903ea-4102-4103-b2b2-9ada9a8f7cf3)) (wire (pts (xy 53.34 200.66) (xy 45.72 200.66)) (stroke (width 0) (type default)) (uuid 4c984753-3798-4c66-8b45-a0236b49e69e)) (label "COL2" (at 45.72 200.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 5d79bfe8-2a32-4ced-ae0a-c258a1c08bf8)) (wire (pts (xy 53.34 203.2) (xy 45.72 203.2)) (stroke (width 0) (type default)) (uuid 21aa6c90-6217-4d90-8c4a-f37a8beca240)) (label "COL3" (at 45.72 203.2 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 89173103-b7ba-42ca-b177-7d79b6b2301f)) (wire (pts (xy 53.34 205.74) (xy 45.72 205.74)) (stroke (width 0) (type default)) (uuid 7766e76f-561e-464b-96fa-db5a51e050d5)) (label "COL4" (at 45.72 205.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f548df64-2891-4ccd-b68e-2bf0e3769beb)) (wire (pts (xy 53.34 208.28) (xy 45.72 208.28)) (stroke (width 0) (type default)) (uuid e1ee2964-f7e0-4d02-8793-5eba592ebf4f)) (label "COL5" (at 45.72 208.28 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7a75afab-dedd-4eea-88b0-26c4ff3bc7ee)) (wire (pts (xy 53.34 210.82) (xy 45.72 210.82)) (stroke (width 0) (type default)) (uuid 32666f52-af7d-4f57-8f79-897b476eeb34)) (label "COL6" (at 45.72 210.82 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 96c0f220-acc4-402e-82bc-c7314e278f3b)) (wire (pts (xy 53.34 213.36) (xy 45.72 213.36)) (stroke (width 0) (type default)) (uuid 947ea480-cd6e-4fd1-a464-4dcb2cd9b393)) (label "COL7" (at 45.72 213.36 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid c4b00b08-b600-4bc1-91f2-29e2cd1a0fd7)) (wire (pts (xy 53.34 215.9) (xy 45.72 215.9)) (stroke (width 0) (type default)) (uuid b42f474b-14eb-4bf9-be49-bdcf4b770752)) (label "COL8" (at 45.72 215.9 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 7923c6ec-1476-4e4a-9eea-6febf9f56151)) (wire (pts (xy 53.34 218.44) (xy 45.72 218.44)) (stroke (width 0) (type default)) (uuid a4927496-a296-439f-9887-54bc774d3be5)) (label "COL9" (at 45.72 218.44 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid abc19787-282e-4f0a-be79-b756ba8c1f32)) (wire (pts (xy 53.34 220.98) (xy 45.72 220.98)) (stroke (width 0) (type default)) (uuid dbcd8fad-5d42-46af-99f8-0cc7443c6974)) (label "COL10" (at 45.72 220.98 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid b4c46a7d-1b29-4867-a578-599cd20ecea3)) (wire (pts (xy 53.34 223.52) (xy 45.72 223.52)) (stroke (width 0) (type default)) (uuid 665db30b-295b-49dd-86fc-c2b11fcf74f8)) (label "COL11" (at 45.72 223.52 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 9fdc5ca6-42c0-4eac-82e2-6f0d83524506)) (wire (pts (xy 53.34 226.06) (xy 45.72 226.06)) (stroke (width 0) (type default)) (uuid ea0f09ee-548d-41fc-9f8c-9ec1bd914305)) (label "COL12" (at 45.72 226.06 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid e0702589-313c-4d6a-844a-b676dc1ca21a)) (wire (pts (xy 53.34 228.6) (xy 45.72 228.6)) (stroke (width 0) (type default)) (uuid a2585325-0d8c-4b5b-8d33-d74fb04918c0)) (label "COL13" (at 45.72 228.6 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 79712dee-b7a4-4f5e-a1b8-a6d1433a218b)) (wire (pts (xy 53.34 231.14) (xy 45.72 231.14)) (stroke (width 0) (type default)) (uuid 067d13f0-e456-47db-bb6d-68d43ef139b9)) (label "COL14" (at 45.72 231.14 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 3489dfe8-0d3e-4619-9bcd-adf9ce075528)) (wire (pts (xy 53.34 233.68) (xy 45.72 233.68)) (stroke (width 0) (type default)) (uuid 48e8f3b8-6983-43cb-8822-197ea975debf)) (label "COL15" (at 45.72 233.68 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 890a9f71-f82f-4284-ab31-1a2cc66a26c2)) (wire (pts (xy 99.06 198.12) (xy 106.68 198.12)) (stroke (width 0) (type default)) (uuid db75eca1-e5db-4850-a22b-5c7a51067cab)) (label "ROW0" (at 106.68 198.12 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid f0576898-3c84-42e2-84eb-270e7ff9b5ab)) (wire (pts (xy 99.06 200.66) (xy 106.68 200.66)) (stroke (width 0) (type default)) (uuid 2381c988-e95c-437c-8f6d-7a502e24726c)) (label "ROW1" (at 106.68 200.66 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 13bd371c-5d38-4686-a1d6-b5eca75db08c)) (wire (pts (xy 99.06 203.2) (xy 106.68 203.2)) (stroke (width 0) (type default)) (uuid d9165de8-d527-48d2-b6cb-7e2685b396b7)) (label "ROW2" (at 106.68 203.2 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 426d83fd-2acd-4e08-835b-a4595a7a5b79)) (wire (pts (xy 99.06 205.74) (xy 106.68 205.74)) (stroke (width 0) (type default)) (uuid 48c00bc8-4af1-44d9-889c-a4c8f66eb99f)) (label "ROW3" (at 106.68 205.74 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid 4e5862a7-9d4a-4fc9-bf8f-9f1b36a88715)) (wire (pts (xy 99.06 208.28) (xy 106.68 208.28)) (stroke (width 0) (type default)) (uuid 4b4e9efd-54e4-496a-ba47-bba745dd5688)) (label "ROW4" (at 106.68 208.28 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid e4b26493-4b27-41b6-9cdb-e6a2b18746e4)) (no_connect (at 99.06 210.82) (uuid c680648b-5220-4e98-8537-39b024d9ddc7)) (no_connect (at 99.06 213.36) (uuid 233e1952-d1d1-4147-8f45-bbf04a884a0b)) (no_connect (at 53.34 187.96) (uuid 0fe2b42b-4d58-457c-b5f3-6bdfbedb913c)) (no_connect (at 99.06 223.52) (uuid 17642999-02ef-46c8-a4bb-7bd79c8c5e28)) (no_connect (at 99.06 226.06) (uuid 8627419f-9be1-4241-be02-0f81ebe6bdbc)) (no_connect (at 99.06 233.68) (uuid c8383405-94c1-4716-96a9-7a0a36052e15)) (no_connect (at 99.06 228.6) (uuid f66f6e75-0631-4700-a8b3-00b7e09d734e)) (no_connect (at 99.06 218.44) (uuid ce0f19ce-5953-4246-b557-3c5cda97d313)) (no_connect (at 81.28 172.72) (uuid 0d3efd8c-c923-4e87-814c-44b6ecf893de)) (no_connect (at 53.34 190.5) (uuid a4a550db-b1fc-4e49-bea6-255b5ab0e989)) (no_connect (at 71.12 172.72) (uuid d82d0c47-71e3-4ef8-b907-0a12f8a9aa13)) (no_connect (at 76.2 172.72) (uuid 0c627766-824b-469d-b4ca-0f50497b143d)) 
+    (symbol (lib_id "Mechanical:MountingHole") (at 157.48 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid ecef43f2-3cec-4df7-a79a-8a1d5aaf3f34)
+      (property "Reference" "H1" (at 157.48 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 157.48 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 157.48 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H1") (unit 1)))))
+     
+    (symbol (lib_id "Mechanical:MountingHole") (at 170.18 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid c0a15467-762e-4a26-8d3d-27cf4a4de0aa)
+      (property "Reference" "H2" (at 170.18 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 170.18 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 170.18 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H2") (unit 1)))))
+     
+    (symbol (lib_id "Mechanical:MountingHole") (at 182.88 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid 205d9d9b-c7b5-4265-9734-9d0d851c1cdb)
+      (property "Reference" "H3" (at 182.88 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 182.88 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 182.88 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H3") (unit 1)))))
+     
+    (symbol (lib_id "Mechanical:MountingHole") (at 195.58 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid 226137e0-aa48-4768-b313-5552ddc9b266)
+      (property "Reference" "H4" (at 195.58 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 195.58 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 195.58 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H4") (unit 1)))))
+     
+    (symbol (lib_id "Mechanical:MountingHole") (at 208.28 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid 5db059d1-7238-4e40-b446-55a839599bd4)
+      (property "Reference" "H5" (at 208.28 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 208.28 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 208.28 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H5") (unit 1)))))
+     
+    (symbol (lib_id "Mechanical:MountingHole") (at 220.98 205.74 0) (unit 1)
+      (in_bom no) (on_board yes) (dnp no) (uuid b5923445-9889-4da9-99bc-4851012a014d)
+      (property "Reference" "H6" (at 220.98 202.94 0) (effects (font (size 1.0 1.0))))
+      (property "Value" "M3" (at 220.98 208.54 0) (effects (font (size 1.0 1.0))))
+      (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 220.98 205.74 0) (hide yes) (effects (font (size 1.0 1.0))))
+      
+      (instances (project "Keeb65" (path "/2d42baae-762d-4bed-8016-8f40f81b6f39" (reference "H6") (unit 1)))))
+     (text "M3 tray mounting holes" (at 148.59 196.85 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid 936ea019-139b-44b1-8a7a-d3d6b2df2a3d)) (text "Pico connects to host over its own USB port. No external power wiring." (at 22.86 247.65 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid 353170f0-bf0b-428d-9225-3e05591fd0e3))
+  (sheet_instances (path "/" (page "1")))
+)

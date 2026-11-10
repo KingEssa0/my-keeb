@@ -1,0 +1,8 @@
+Quantity,Part,Notes
+1,Raspberry Pi Pico (RP2040),"Original Pico, with micro USB"
+2,1x20 2.54 mm male header,Solder Pico to carrier PCB
+67,MX-style mechanical switch,"Through-hole, PCB mount"
+67,1N4148,"Through-hole DO-35, 7.62 mm lead spacing"
+3,2u PCB-mount stabilizer,"Backspace, Enter, and left Shift"
+1,6.25u PCB-mount stabilizer,Spacebar
+1,65% ANSI MX-compatible keycap set,"Includes 1.75u right Shift, 1.25u bottom modifiers, and 6.25u spacebar"
