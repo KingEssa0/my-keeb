@@ -6,3 +6,5 @@ Quantity,Part,Notes
 3,2u PCB-mount stabilizer,"Backspace, Enter, and left Shift"
 1,6.25u PCB-mount stabilizer,Spacebar
 1,65% ANSI MX-compatible keycap set,"Includes 1.75u right Shift, 1.25u bottom modifiers, and 6.25u spacebar"
+1,Caps Lock LED,Adafruit 299 or equivalent diffused red 5 mm LED
+1,1 kΩ resistor,Inline with the Caps Lock LED

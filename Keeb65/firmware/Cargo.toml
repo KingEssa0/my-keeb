@@ -5,7 +5,7 @@ edition = "2024"
 publish = false
 
 [dependencies]
-rmk = { version = "=0.8.2", default-features = false, features = ["rp2040", "defmt"] }
+rmk = { version = "=0.8.2", default-features = false, features = ["rp2040", "defmt", "controller"] }
 embassy-time = { version = "0.5", features = ["defmt"] }
 embassy-rp = { version = "0.8", features = ["rp2040", "defmt", "time-driver", "critical-section-impl"] }
 embassy-executor = { version = "0.9", features = ["defmt", "arch-cortex-m", "executor-thread"] }

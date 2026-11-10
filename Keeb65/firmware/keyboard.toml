@@ -40,3 +40,7 @@ enabled = false
 
 [host]
 vial_enabled = false
+
+[light]
+capslock.pin = "PIN_22"
+capslock.low_active = false
