@@ -1,0 +1,42 @@
+[keyboard]
+name = "Keeb65"
+product_name = "Keeb65"
+vendor_id = 0x4c4b
+product_id = 0x4643
+chip = "rp2040"
+
+[matrix]
+# Diode bands face ROW0 through ROW4 on the PCB.
+row_pins = ["PIN_16", "PIN_17", "PIN_18", "PIN_19", "PIN_20"]
+col_pins = [
+    "PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_6", "PIN_7",
+    "PIN_8", "PIN_9", "PIN_10", "PIN_11", "PIN_12", "PIN_13", "PIN_14", "PIN_15",
+]
+row2col = false
+
+[layout]
+rows = 5
+cols = 16
+layers = 2
+keymap = [
+    [
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "No", "Backspace", "Delete"],
+        ["Tab", "No", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "PageUp"],
+        ["CapsLock", "No", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "Enter", "No", "PageDown"],
+        ["No", "LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "No", "RShift", "Up", "End"],
+        ["LCtrl", "LGui", "No", "LAlt", "No", "No", "Space", "No", "No", "No", "RAlt", "MO(1)", "No", "Left", "Down", "Right"],
+    ],
+    [
+        ["Grave", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "No", "Insert", "_"],
+        ["_", "No", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "Home"],
+        ["_", "No", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "No", "_"],
+        ["No", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "No", "_", "_", "_"],
+        ["_", "_", "No", "_", "No", "No", "_", "No", "No", "No", "_", "_", "No", "_", "_", "_"],
+    ],
+]
+
+[storage]
+enabled = false
+
+[host]
+vial_enabled = false
